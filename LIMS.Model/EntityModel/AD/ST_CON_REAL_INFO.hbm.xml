@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_CON_REAL_INFO" table="ST_CON_REAL_INFO" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_ST_CON_REAL_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="CON_TYPE">
+      <column name="CON_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_ID">
+      <column name="POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COORD_X">
+      <column name="COORD_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COORD_Y">
+      <column name="COORD_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOAD_FLAG">
+      <column name="LOAD_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="AVL_FLAG">
+      <column name="AVL_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="USE_FLAG">
+      <column name="USE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TEMP">
+      <column name="TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="THERMAL_STATUS">
+      <column name="THERMAL_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

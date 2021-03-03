@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CHECK_DEPLOY_MAP" table="CHECK_DEPLOY_MAP" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CHECK_DEPLOY_MAP_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="TOP_ID" lazy="false" fetch="join" class="CHECK_TOP_CLASS">
+      <column name="TOP_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <many-to-one name="BOTTOM_ID" lazy="false" fetch="join" class="CHECK_BOTTOM_CLASS">
+      <column name="BOTTOM_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="OPERATOR_ID_GATHER">
+      <column name="OPERATOR_ID_GATHER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AMA621" table="AMA621" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_NO">
+      <column name="PROD_SHIFT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_GROUP">
+      <column name="PROD_SHIFT_GROUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_MAKER">
+      <column name="PROD_MAKER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROC_NO">
+      <column name="PROC_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEV_CODE">
+      <column name="DEV_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SM_PLAN_NO">
+      <column name="SM_PLAN_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PONO">
+      <column name="PONO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PREC_ST_NO">
+      <column name="PREC_ST_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_LOT_NO">
+      <column name="CAST_LOT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_DIV_NO">
+      <column name="CAST_DIV_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STRAND_NO">
+      <column name="STRAND_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_CUT_SEQ">
+      <column name="MAT_CUT_SEQ" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_NO">
+      <column name="MAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUST_MAT_NO">
+      <column name="CUST_MAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PRE_MAT_NO">
+      <column name="PRE_MAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FURNACE_BATCH_NO">
+      <column name="FURNACE_BATCH_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ORDER_NO">
+      <column name="ORDER_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUT_ST_NO">
+      <column name="CUT_ST_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_THICK">
+      <column name="MAT_THICK" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_WIDTH">
+      <column name="MAT_WIDTH" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_LEN">
+      <column name="MAT_LEN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_WT">
+      <column name="MAT_WT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="WT_MODE">
+      <column name="WT_MODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_PLAN_DEST">
+      <column name="MAT_PLAN_DEST" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_TYPE">
+      <column name="MAT_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IF_TRANSFER">
+      <column name="IF_TRANSFER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PONO_CONNECT">
+      <column name="PONO_CONNECT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CONNECT_START_POS">
+      <column name="CONNECT_START_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CONNECT_END_POS">
+      <column name="CONNECT_END_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_PLACE_CODE">
+      <column name="MAT_PLACE_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_CUT_TIME">
+      <column name="MAT_CUT_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUT_POS">
+      <column name="CUT_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIX_SLAB_NUM">
+      <column name="FIX_SLAB_NUM" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_TUBE">
+      <column name="MAT_TUBE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FACTORY_DIV">
+      <column name="FACTORY_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_QUAL_FLG">
+      <column name="MAT_QUAL_FLG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_CHARGE_FLAG">
+      <column name="HOT_CHARGE_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_SEND_FLAG">
+      <column name="HOT_SEND_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_SEND_DECNDE">
+      <column name="HOT_SEND_DECNDE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_SEND_STOP_CAUSE">
+      <column name="HOT_SEND_STOP_CAUSE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_CUT_TEMP">
+      <column name="MAT_CUT_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_COLD_BED_TEMP">
+      <column name="MAT_COLD_BED_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HISPEED_ROLLTABLE_START">
+      <column name="HISPEED_ROLLTABLE_START" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="QUALITY_ABN_CODE">
+      <column name="QUALITY_ABN_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HDR_STD">
+      <column name="HDR_STD" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUT_TOP_TAR_LEN">
+      <column name="CUT_TOP_TAR_LEN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUT_TAIL_LEN">
+      <column name="CUT_TAIL_LEN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_HOT_SEND_PLAN">
+      <column name="MAT_HOT_SEND_PLAN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TAR_LEN">
+      <column name="TAR_LEN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAX_LEN">
+      <column name="MAX_LEN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MIN_LEN">
+      <column name="MIN_LEN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIN_CUT_FLG">
+      <column name="FIN_CUT_FLG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUT_BG_LENGTH">
+      <column name="CUT_BG_LENGTH" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CUT_ED_LENGTH">
+      <column name="CUT_ED_LENGTH" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="JJQ_YMBD_1">
+      <column name="JJQ_YMBD_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="JJQ_YMBD_2">
+      <column name="JJQ_YMBD_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="JJQ_YMBD_3">
+      <column name="JJQ_YMBD_3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZJB_YMBD_BG1">
+      <column name="ZJB_YMBD_BG1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZJB_YMBD_ED1">
+      <column name="ZJB_YMBD_ED1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZJB_YMBD_BG2">
+      <column name="ZJB_YMBD_BG2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZJB_YMBD_ED2">
+      <column name="ZJB_YMBD_ED2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZJB_YMBD_BG3">
+      <column name="ZJB_YMBD_BG3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZJB_YMBD_ED3">
+      <column name="ZJB_YMBD_ED3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_BG1">
+      <column name="LSYC_BG1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_ED1">
+      <column name="LSYC_ED1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_BG2">
+      <column name="LSYC_BG2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_ED2">
+      <column name="LSYC_ED2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_BG3">
+      <column name="LSYC_BG3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_ED3">
+      <column name="LSYC_ED3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LSYC_CAUSE">
+      <column name="LSYC_CAUSE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IF_AUTO">
+      <column name="IF_AUTO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SDKZ_BG">
+      <column name="SDKZ_BG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SDKZ_ED">
+      <column name="SDKZ_ED" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GSN_BG1">
+      <column name="GSN_BG1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GSN_ED1">
+      <column name="GSN_ED1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GSN_BG2">
+      <column name="GSN_BG2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GSN_ED2">
+      <column name="GSN_ED2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CKJZ_REASON">
+      <column name="CKJZ_REASON" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEST_FLAG">
+      <column name="DEST_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROCESS_PATH">
+      <column name="PROCESS_PATH" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PRE_FURNACE_BATCH">
+      <column name="PRE_FURNACE_BATCH" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

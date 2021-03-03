@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WH_POSITION_REAL_INFO" table="WH_POSITION_REAL_INFO" lazy="true" schema="AD" >
+    <id name="POSITION_ID" column="POSITION_ID">
+      <generator class="sequence">
+        <param name="sequence">S_WH_POSITION_REAL_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="ID">
+      <column name="区域ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_NO_STUS">
+      <column name="POSITION_NO_STUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLAB_SN_LIST">
+      <column name="SLAB_SN_LIST" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CENTRE_X">
+      <column name="CENTRE_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Y">
+      <column name="CENTRE_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_LENGTH">
+      <column name="MAX_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_LENGTH">
+      <column name="MIN_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_WIDTH">
+      <column name="MAX_WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_WIDTH">
+      <column name="MIN_WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_THICKNESS">
+      <column name="MAX_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_THICKNESS">
+      <column name="MIN_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LAYER">
+      <column name="LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEIGHT">
+      <column name="HEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FILED1">
+      <column name="FILED1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FILED2">
+      <column name="FILED2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FILED3">
+      <column name="FILED3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSITION_LIMIT_HEIGHT">
+      <column name="POSITION_LIMIT_HEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

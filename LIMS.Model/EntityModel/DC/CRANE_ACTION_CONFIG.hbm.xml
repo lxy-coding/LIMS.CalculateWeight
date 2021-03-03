@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_ACTION_CONFIG" table="CRANE_ACTION_CONFIG" lazy="true" schema="DC" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CRANE_ACTION_CONFIG_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="BUFFER_DATA_POINT_ID" lazy="false" fetch="join" class="OPC_DATA_POINT">
+      <column name="BUFFER_DATA_POINT_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <many-to-one name="CRANE_ACTION_DEVICE_ID" lazy="false" fetch="join" class="CRANE_ACTION_DEVICE">
+      <column name="CRANE_ACTION_DEVICE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="FIELD_NAME">
+      <column name="FIELD_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENABLE">
+      <column name="ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD_DATA_TYPE">
+      <column name="FIELD_DATA_TYPE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD_DATA_LENGTH">
+      <column name="FIELD_DATA_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

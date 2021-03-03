@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SYSTEM_UPDATIN" table="SYSTEM_UPDATIN" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_SYSTEM_UPDATIN_ID</param>
+      </generator>
+    </id>
+    <property name="VERSION_NUM">
+      <column name="VERSION_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="VERSION_CONTENT">
+      <column name="VERSION_CONTENT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="AREA_UPDATIN_DLL">
+      <column name="AREA_UPDATIN_DLL" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FILE_ADDRESS">
+      <column name="FILE_ADDRESS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SERVICE_IP">
+      <column name="SERVICE_IP" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_READ">
+      <column name="IS_READ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

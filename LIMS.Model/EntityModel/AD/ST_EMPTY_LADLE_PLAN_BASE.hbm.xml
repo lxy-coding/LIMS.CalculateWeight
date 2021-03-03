@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_EMPTY_LADLE_PLAN_BASE" table="ST_EMPTY_LADLE_PLAN_BASE" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="LADLE_PLAN_NUM">
+      <column name="LADLE_PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_TRANS_ID">
+      <column name="PLAN_TRANS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_ID">
+      <column name="LADLE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CURRENT_WST_ID">
+      <column name="CURRENT_WST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RCM_WST_ID">
+      <column name="RCM_WST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MODIFY_TIME">
+      <column name="MODIFY_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="USER_NUM">
+      <column name="USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ACCEPT_TIME">
+      <column name="ACCEPT_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_ORGIN">
+      <column name="PLAN_ORGIN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAILURE_REASON">
+      <column name="FAILURE_REASON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_PLAN_CANCEL">
+      <column name="IS_PLAN_CANCEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CANCEL_TIME">
+      <column name="CANCEL_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MODIFY_STATUS">
+      <column name="MODIFY_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

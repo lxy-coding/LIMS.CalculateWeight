@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HEAT_TEMP_COMPENSATION" table="HEAT_TEMP_COMPENSATION" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_NUM">
+      <column name="BOF_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_TAP_TEMP">
+      <column name="BOF_TAP_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOF_TAP_TIME">
+      <column name="BOF_TAP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOF_TEMP_COMPEN">
+      <column name="BOF_TEMP_COMPEN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LF_NUM">
+      <column name="LF_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LF_TAP_TEMP">
+      <column name="LF_TAP_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LF_TAP_TIME">
+      <column name="LF_TAP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LF_TEMP_COMPEN">
+      <column name="LF_TEMP_COMPEN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RH_NUM">
+      <column name="RH_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="RH_TAP_TEMP">
+      <column name="RH_TAP_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RH_TAP_TIME">
+      <column name="RH_TAP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="RH_TEMP_COMPEN">
+      <column name="RH_TEMP_COMPEN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

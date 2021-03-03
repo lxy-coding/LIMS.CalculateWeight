@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HML_OUTPUT_RECORD" table="HML_OUTPUT_RECORD" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HEAT_BATCH_NO">
+      <column name="HEAT_BATCH_NO" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="HML_NUM">
+      <column name="HML_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="VERHICLE_NUM">
+      <column name="VERHICLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="INPUT_WST">
+      <column name="INPUT_WST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="USER_ID">
+      <column name="USER_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="TEAM_ID">
+      <column name="TEAM_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="OUTPUT_TIME">
+      <column name="OUTPUT_TIME" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

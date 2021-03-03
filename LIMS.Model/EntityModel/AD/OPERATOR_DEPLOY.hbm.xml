@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="OPERATOR_DEPLOY" table="OPERATOR_DEPLOY" lazy="true" schema="AD" >
+    <id name="MATCH_ID" column="MATCH_ID">
+      <generator class="sequence">
+        <param name="sequence">S_OPERATOR_DEPLOY_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="PLAN_ID" lazy="false" fetch="join" class="PLAN_BASIC_INFO">
+      <column name="PLAN_ID" sql-type="NUMBER" not-null="true" />
+    </many-to-one>
+    <many-to-one name="PRIORITY_ID" lazy="false" fetch="join" class="PRIORITY_BASIC_INFO">
+      <column name="PRIORITY_ID" sql-type="NUMBER" not-null="true" />
+    </many-to-one>
+    <property name="KEY_DATA">
+      <column name="KEY_DATA" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OPERATOR_GATHER">
+      <column name="OPERATOR_GATHER" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="CALCULATIONS_NUMBER">
+      <column name="CALCULATIONS_NUMBER" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="PROCESS_TYPE">
+      <column name="PROCESS_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

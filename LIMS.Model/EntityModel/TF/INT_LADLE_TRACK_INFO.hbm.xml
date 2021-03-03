@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="INT_LADLE_TRACK_INFO" table="INT_LADLE_TRACK_INFO" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_INT_LADLE_TRACK_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="STEEL_GRADE">
+      <column name="STEEL_GRADE" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="STEEL_WEIGHT">
+      <column name="STEEL_WEIGHT" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="IS_COVER">
+      <column name="IS_COVER" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="ACTION_SYMBOL">
+      <column name="ACTION_SYMBOL" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="WST_NUM">
+      <column name="WST_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

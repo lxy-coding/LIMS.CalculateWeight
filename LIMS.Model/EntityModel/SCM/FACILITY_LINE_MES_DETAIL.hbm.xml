@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="FACILITY_LINE_MES_DETAIL" table="FACILITY_LINE_MES_DETAIL" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HEAT_PLAN_MES_ID">
+      <column name="HEAT_PLAN_MES_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FACILITY_ID">
+      <column name="FACILITY_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DTHEATSTART">
+      <column name="DTHEATSTART" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DTHEATDEPARTURE">
+      <column name="DTHEATDEPARTURE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

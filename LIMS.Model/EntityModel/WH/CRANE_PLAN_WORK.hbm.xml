@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_PLAN_WORK" table="CRANE_PLAN_WORK" lazy="true" schema="WH" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="PLA_ID">
+      <column name="PLA_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_WORK_TYPE">
+      <column name="PLAN_WORK_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CRA_ID">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="VEHICLE_ID">
+      <column name="VEHICLE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_NUM">
+      <column name="STEEL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="START_SPA_ID">
+      <column name="START_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_AREA_ID">
+      <column name="START_AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_POSITION_ID">
+      <column name="START_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_LAYER">
+      <column name="START_LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_SPA_ID">
+      <column name="END_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_AREA_ID">
+      <column name="END_AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_POSITION_ID">
+      <column name="END_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_FROM">
+      <column name="PLAN_FROM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="READ_FLAG">
+      <column name="READ_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_CODE">
+      <column name="HEAT_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_COUNT">
+      <column name="STEEL_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REMAIN_COUNT">
+      <column name="REMAIN_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

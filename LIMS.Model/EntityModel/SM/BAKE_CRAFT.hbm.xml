@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BAKE_CRAFT" table="BAKE_CRAFT" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_BAKE_CRAFT_ID</param>
+      </generator>
+    </id>
+    <property name="MAINTAIN_TYPE">
+      <column name="MAINTAIN_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MINFIRE_TIME">
+      <column name="MINFIRE_TIME" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MEDIUMFIRE_TIME">
+      <column name="MEDIUMFIRE_TIME" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAXFIRE_TIME">
+      <column name="MAXFIRE_TIME" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

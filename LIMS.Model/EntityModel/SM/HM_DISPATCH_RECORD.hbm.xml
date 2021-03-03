@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HM_DISPATCH_RECORD" table="HM_DISPATCH_RECORD" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HEAT_BATCH_NO">
+      <column name="HEAT_BATCH_NO" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="HML_NUM">
+      <column name="HML_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="CRA_NUM">
+      <column name="CRA_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="BOF_NUM">
+      <column name="BOF_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISPATCH_TIME">
+      <column name="DISPATCH_TIME" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="DISPATCH_STATUS">
+      <column name="DISPATCH_STATUS" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="OUTPUT_STATUS">
+      <column name="OUTPUT_STATUS" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="USER_ID">
+      <column name="USER_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="TEAM_ID">
+      <column name="TEAM_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HM_TEMP">
+      <column name="HM_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DROP_IN_IRONLINE">
+      <column name="DROP_IN_IRONLINE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="DROP_IN_IRONLINE_TIME">
+      <column name="DROP_IN_IRONLINE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DROP_IN_IRONLINE_POSIT">
+      <column name="DROP_IN_IRONLINE_POSIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DROP_IN_IRONLINE_ID">
+      <column name="DROP_IN_IRONLINE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SEND_TO_L3_FLAG">
+      <column name="SEND_TO_L3_FLAG" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="BEFORE_WEIGHT">
+      <column name="BEFORE_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="AFTER_WEIGHT">
+      <column name="AFTER_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="NET_WEIGHT">
+      <column name="NET_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CHARGE_START_TIME">
+      <column name="CHARGE_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CHARGE_END_TIME">
+      <column name="CHARGE_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DISPATCH_END_TIME">
+      <column name="DISPATCH_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

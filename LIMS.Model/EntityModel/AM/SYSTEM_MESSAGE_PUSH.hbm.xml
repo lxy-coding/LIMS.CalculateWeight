@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SYSTEM_MESSAGE_PUSH" table="SYSTEM_MESSAGE_PUSH" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <many-to-one name="ROL_ID" lazy="false" fetch="join" class="ROLE_INFO">
+      <column name="ROL_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="TITLE">
+      <column name="TITLE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CONTENT">
+      <column name="CONTENT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PUSHROLE">
+      <column name="PUSHROLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LEVEL_NUM">
+      <column name="LEVEL_NUM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="URL">
+      <column name="URL" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_READ">
+      <column name="IS_READ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MESSAGE_TYPE">
+      <column name="MESSAGE_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HANDLE_FLAG">
+      <column name="HANDLE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HANDLE_TIME">
+      <column name="HANDLE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CREATER">
+      <column name="CREATER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

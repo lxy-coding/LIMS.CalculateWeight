@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WEIGHT_MACHINE_RUN_RECORD" table="WEIGHT_MACHINE_RUN_RECORD" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <many-to-one name="OBJ_ID" lazy="false" fetch="join" class="OBJECT_PROPERTY">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="OBJ_STATUS_ID">
+      <column name="OBJ_STATUS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ONLINE">
+      <column name="IS_ONLINE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="READ_FLAG">
+      <column name="READ_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

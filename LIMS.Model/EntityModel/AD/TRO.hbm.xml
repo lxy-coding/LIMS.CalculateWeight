@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TRO" table="TRO" lazy="true" schema="AD" >
+    <id name="TRO_ID" column="TRO_ID">
+      <generator class="sequence">
+        <param name="sequence">S_TRO_ID</param>
+      </generator>
+    </id>
+    <property name="MAX_WEIGHT">
+      <column name="MAX_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_SPEED">
+      <column name="MAX_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="AVE_SPEED">
+      <column name="AVE_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_LIMIT_X">
+      <column name="UP_LIMIT_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_LIMIT_X">
+      <column name="DOWN_LIMIT_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_LIMIT_Y">
+      <column name="UP_LIMIT_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_LIMIT_Y">
+      <column name="DOWN_LIMIT_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_LIMIT_Z">
+      <column name="UP_LIMIT_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_LIMIT_Z">
+      <column name="DOWN_LIMIT_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAVY_SPEED">
+      <column name="HEAVY_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLIGHT_SPEED">
+      <column name="SLIGHT_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EMPTY_SPEED">
+      <column name="EMPTY_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BASE_WEGHTI">
+      <column name="BASE_WEGHTI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DIRC">
+      <column name="DIRC" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

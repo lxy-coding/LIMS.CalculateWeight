@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="STEEL_PROPERTY" table="STEEL_PROPERTY" lazy="true" schema="WH" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="STEEL_NUM">
+      <column name="STEEL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WIDTH">
+      <column name="WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_LENGTH">
+      <column name="STEEL_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="THICK">
+      <column name="THICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGTH">
+      <column name="WEIGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="S_SIZE">
+      <column name="S_SIZE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="S_LEVEL">
+      <column name="S_LEVEL" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_BUY">
+      <column name="IS_BUY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ORDER_NO">
+      <column name="ORDER_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SLOT_MANAGEMENT_INFO" table="SLOT_MANAGEMENT_INFO" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="SLOT_NUM">
+      <column name="SLOT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENTER_CAR_NUM">
+      <column name="ENTER_CAR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_ID">
+      <column name="REFE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GRASS_WT">
+      <column name="GRASS_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TARE_WT">
+      <column name="TARE_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="NET_WT">
+      <column name="NET_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_MAT">
+      <column name="SCRAP_MAT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SRC_DEPT_NAME">
+      <column name="SRC_DEPT_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SRC_STOCK_NAME">
+      <column name="SRC_STOCK_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DEST_DEPT_NAME">
+      <column name="DEST_DEPT_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BAR_CODE">
+      <column name="BAR_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENTER_CRANE_NUM">
+      <column name="ENTER_CRANE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENTER_TIME">
+      <column name="ENTER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="IS_PUT">
+      <column name="IS_PUT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ENTER_SPA">
+      <column name="ENTER_SPA" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENTER_TEAM">
+      <column name="ENTER_TEAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENTER_SHIFT">
+      <column name="ENTER_SHIFT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENTER_USER">
+      <column name="ENTER_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ADD_CRANE_NUM">
+      <column name="ADD_CRANE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DEV_CODE">
+      <column name="DEV_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ADD_CRANE_UP_TIME">
+      <column name="ADD_CRANE_UP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="ADD_BEFORE_WT">
+      <column name="ADD_BEFORE_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ADD_AFTER_WT">
+      <column name="ADD_AFTER_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ADD_NET_WT">
+      <column name="ADD_NET_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ADD_TEAM">
+      <column name="ADD_TEAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ADD_SHIFT">
+      <column name="ADD_SHIFT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ADD_USER">
+      <column name="ADD_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OUT_CAR_NUM">
+      <column name="OUT_CAR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OUT_CRANE_NUM">
+      <column name="OUT_CRANE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OUT_TIME">
+      <column name="OUT_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="OUT_TEAM">
+      <column name="OUT_TEAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OUT_SHIFT">
+      <column name="OUT_SHIFT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OUT_USER">
+      <column name="OUT_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_COUNT">
+      <column name="POUR_SPA_COUNT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_POSIT1">
+      <column name="POUR_SPA_POSIT1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_TIME1">
+      <column name="POUR_SPA_TIME1" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="POUR_TEAM1">
+      <column name="POUR_TEAM1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SHIFT1">
+      <column name="POUR_SHIFT1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_USER1">
+      <column name="POUR_USER1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_POSIT2">
+      <column name="POUR_SPA_POSIT2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_TIME2">
+      <column name="POUR_SPA_TIME2" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="POUR_TEAM2">
+      <column name="POUR_TEAM2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SHIFT2">
+      <column name="POUR_SHIFT2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_USER2">
+      <column name="POUR_USER2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_POSIT3">
+      <column name="POUR_SPA_POSIT3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SPA_TIME3">
+      <column name="POUR_SPA_TIME3" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="POUR_TEAM3">
+      <column name="POUR_TEAM3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_SHIFT3">
+      <column name="POUR_SHIFT3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_USER3">
+      <column name="POUR_USER3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_AUTO_IN">
+      <column name="IS_AUTO_IN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_STATE">
+      <column name="IS_STATE" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

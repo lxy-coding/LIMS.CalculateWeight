@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_EX_SLOT_DETAIL" table="ST_EX_SLOT_DETAIL" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="AUTO_NUM">
+      <column name="AUTO_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_ID">
+      <column name="SLOT_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COMMON_IRON_WEIGHT">
+      <column name="COMMON_IRON_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOW_NI_IRON_WEIGHT">
+      <column name="LOW_NI_IRON_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DREGS_STEEL_WEIGHT">
+      <column name="DREGS_STEEL_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UNIFY_MATERIAL_WEIGHT">
+      <column name="UNIFY_MATERIAL_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CLASS1_SCRAP_WEIGHT">
+      <column name="CLASS1_SCRAP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CLASS2_SCRAP_WEIGHT">
+      <column name="CLASS2_SCRAP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ACCEPT_TIME">
+      <column name="ACCEPT_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_FLAG">
+      <column name="READ_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

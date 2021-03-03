@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AMA626" table="AMA626" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_TYPE">
+      <column name="POS_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_YARD">
+      <column name="POS_YARD" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_AREA">
+      <column name="POS_AREA" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_COLUMN">
+      <column name="POS_COLUMN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_ROW">
+      <column name="POS_ROW" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_LAYER">
+      <column name="POS_LAYER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_NO">
+      <column name="POS_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POS_REMARK">
+      <column name="POS_REMARK" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOCK_NO">
+      <column name="STOCK_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOCK_PLACE_NO">
+      <column name="STOCK_PLACE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LAYER_NO">
+      <column name="LAYER_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACKUP">
+      <column name="BACKUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

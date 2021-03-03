@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCREEN_CARTOON_CONFIG" table="SCREEN_CARTOON_CONFIG" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_SCREEN_CARTOON_CONFIG_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="OBJ_TYPE_ID" lazy="false" fetch="join" class="OBJECT_TYPE">
+      <column name="OBJ_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="RESOURCE_NUM">
+      <column name="RESOURCE_NUM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_SHOW">
+      <column name="IS_SHOW" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

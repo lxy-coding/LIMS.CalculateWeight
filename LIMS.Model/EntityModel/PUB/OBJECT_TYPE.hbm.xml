@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="OBJECT_TYPE" table="OBJECT_TYPE" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_OBJECT_TYPE_ID</param>
+      </generator>
+    </id>
+    <property name="OBJ_NUM">
+      <column name="OBJ_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="OBJ_TYPE_NAME">
+      <column name="OBJ_TYPE_NAME" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

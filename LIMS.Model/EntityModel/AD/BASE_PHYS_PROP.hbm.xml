@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BASE_PHYS_PROP" table="BASE_PHYS_PROP" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_BASE_PHYS_PROP_ID</param>
+      </generator>
+    </id>
+    <property name="PROPERTY_NAME">
+      <column name="PROPERTY_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PROPERTY_TYPE">
+      <column name="PROPERTY_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PROPERTY_VALUE">
+      <column name="PROPERTY_VALUE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

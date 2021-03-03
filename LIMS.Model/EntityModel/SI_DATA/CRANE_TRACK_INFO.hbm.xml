@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_TRACK_INFO" table="CRANE_TRACK_INFO" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SM_PLAN_NO">
+      <column name="SM_PLAN_NO" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_NO">
+      <column name="LADLE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_AGE">
+      <column name="LADLE_AGE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_STATUS">
+      <column name="LADLE_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_MAKER">
+      <column name="PROD_MAKER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GRASS_WT">
+      <column name="GRASS_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TARE_WT">
+      <column name="TARE_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="NET_WT">
+      <column name="NET_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RUN_SIGNAL">
+      <column name="RUN_SIGNAL" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="START_TIME_EVENT">
+      <column name="START_TIME_EVENT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

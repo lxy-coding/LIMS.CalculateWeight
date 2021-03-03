@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_MATERIALS" table="LADLE_MATERIALS" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_MATERIALS_ID</param>
+      </generator>
+    </id>
+    <property name="MATERIAL_NUM">
+      <column name="MATERIAL_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="MATERIAL_NAM">
+      <column name="MATERIAL_NAM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="RELATE_COMPONENT">
+      <column name="RELATE_COMPONENT" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

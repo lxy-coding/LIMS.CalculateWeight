@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AMA629" table="AMA629" lazy="true" schema="SI_DATA" >
+     <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_NO">
+      <column name="PROD_SHIFT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_GROUP">
+      <column name="PROD_SHIFT_GROUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_MAKER">
+      <column name="PROD_MAKER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="START_TIME">
+      <column name="START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="END_TIME">
+      <column name="END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_NO">
+      <column name="PROD_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEV_CODE">
+      <column name="DEV_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SM_PLAN_NO">
+      <column name="SM_PLAN_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PONO">
+      <column name="PONO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ST_NO">
+      <column name="ST_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_LOT_NO">
+      <column name="CAST_LOT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_DIV_NO">
+      <column name="CAST_DIV_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REMAIN_TIME">
+      <column name="REMAIN_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REMAIN_WT_LADLE">
+      <column name="REMAIN_WT_LADLE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REMAIN_WT_TUNDISH">
+      <column name="REMAIN_WT_TUNDISH" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TUNDISH_LIQUID_LEVEL">
+      <column name="TUNDISH_LIQUID_LEVEL" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TUNDISH_TEMP">
+      <column name="TUNDISH_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_AR_GAS_PRESSURE">
+      <column name="NOZZLE_AR_GAS_PRESSURE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_SURFACE_AR_PRESSURE">
+      <column name="SLIDE_SURFACE_AR_PRESSURE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_SPEED_1">
+      <column name="CAST_SPEED_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_SPEED_2">
+      <column name="CAST_SPEED_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_CASING_DEPTH1">
+      <column name="LADLE_CASING_DEPTH1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_CASING_DEPTH2">
+      <column name="LADLE_CASING_DEPTH2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_CASING_AR">
+      <column name="LADLE_CASING_AR" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_CASING_PRESSURE">
+      <column name="LADLE_CASING_PRESSURE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_AR_FLOW1">
+      <column name="NOZZLE_AR_FLOW1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_AR_GAS_PRESSURE1">
+      <column name="NOZZLE_AR_GAS_PRESSURE1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_SURFACE_AR_FLOW1">
+      <column name="SLIDE_SURFACE_AR_FLOW1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_SURFACE_AR_PRESSURE1">
+      <column name="SLIDE_SURFACE_AR_PRESSURE1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_LEFT_NARROW_FLUX">
+      <column name="MOLD1_LEFT_NARROW_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_LEFT_NARROW_TEMP">
+      <column name="MOLD1_LEFT_NARROW_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_RIGHT_NARROW_FLUX">
+      <column name="MOLD1_RIGHT_NARROW_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_RIGHT_NARROW_TEMP">
+      <column name="MOLD1_RIGHT_NARROW_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_OUT_WIDE_FLUX">
+      <column name="MOLD1_OUT_WIDE_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_OUT_WIDE_TEMP">
+      <column name="MOLD1_OUT_WIDE_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_IN_WIDE_FLUX">
+      <column name="MOLD1_IN_WIDE_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD1_IN_WIDE_TEMP">
+      <column name="MOLD1_IN_WIDE_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_AR_FLOW2">
+      <column name="NOZZLE_AR_FLOW2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_AR_GAS_PRESSURE2">
+      <column name="NOZZLE_AR_GAS_PRESSURE2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_SURFACE_AR_FLOW2">
+      <column name="SLIDE_SURFACE_AR_FLOW2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_SURFACE_AR_PRESSURE2">
+      <column name="SLIDE_SURFACE_AR_PRESSURE2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_LEFT_NARROW_FLUX">
+      <column name="MOLD2_LEFT_NARROW_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_LEFT_NARROW_TEMP">
+      <column name="MOLD2_LEFT_NARROW_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_RIGHT_NARROW_FLUX">
+      <column name="MOLD2_RIGHT_NARROW_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_RIGHT_NARROW_TEMP">
+      <column name="MOLD2_RIGHT_NARROW_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_OUT_WIDE_FLUX">
+      <column name="MOLD2_OUT_WIDE_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_OUT_WIDE_TEMP">
+      <column name="MOLD2_OUT_WIDE_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_IN_WIDE_FLUX">
+      <column name="MOLD2_IN_WIDE_FLUX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOLD2_IN_WIDE_TEMP">
+      <column name="MOLD2_IN_WIDE_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOPPER_AR_PRESSURE_1">
+      <column name="STOPPER_AR_PRESSURE_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOPPER_AR_PRESSURE_2">
+      <column name="STOPPER_AR_PRESSURE_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOPPER_AR_FLOW_1">
+      <column name="STOPPER_AR_FLOW_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOPPER_AR_FLOW_2">
+      <column name="STOPPER_AR_FLOW_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLUG_ROD_1">
+      <column name="PLUG_ROD_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLUG_ROD_2">
+      <column name="PLUG_ROD_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ELM_STIRRING_CUR_S1">
+      <column name="ELM_STIRRING_CUR_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ELM_STIRRING_CUR_S2">
+      <column name="ELM_STIRRING_CUR_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ELM_STIRRING_FRE_S1">
+      <column name="ELM_STIRRING_FRE_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ELM_STIRRING_FRE_S2">
+      <column name="ELM_STIRRING_FRE_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_E_M_P_W_PRESS_S1">
+      <column name="C1_E_M_P_W_PRESS_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_E_M_P_W_PRESS_S2">
+      <column name="C1_E_M_P_W_PRESS_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_E_M_P_W_TEMP_S1">
+      <column name="C1_E_M_P_W_TEMP_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_E_M_P_W_TEMP_S2">
+      <column name="C1_E_M_P_W_TEMP_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_WATER_TEMP_DIFF_S1">
+      <column name="C1_WATER_TEMP_DIFF_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_WATER_TEMP_DIFF_S2">
+      <column name="C1_WATER_TEMP_DIFF_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_E_M_P_W_FLOW_S1">
+      <column name="C1_E_M_P_W_FLOW_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C1_E_M_P_W_FLOW_S2">
+      <column name="C1_E_M_P_W_FLOW_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_E_M_P_W_TEMP_S1">
+      <column name="C2_E_M_P_W_TEMP_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_E_M_P_W_TEMP_S2">
+      <column name="C2_E_M_P_W_TEMP_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_E_M_P_W_PRESS_S1">
+      <column name="C2_E_M_P_W_PRESS_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_E_M_P_W_PRESS_S2">
+      <column name="C2_E_M_P_W_PRESS_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_E_M_P_W_FLOW_S1">
+      <column name="C2_E_M_P_W_FLOW_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_E_M_P_W_FLOW_S2">
+      <column name="C2_E_M_P_W_FLOW_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_COMPAIR_PRESSURE_S1">
+      <column name="C2_COMPAIR_PRESSURE_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_COMPAIR_PRESSURE_S2">
+      <column name="C2_COMPAIR_PRESSURE_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_COMPAIR_FLOW_S1">
+      <column name="C2_COMPAIR_FLOW_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C2_COMPAIR_FLOW_S2">
+      <column name="C2_COMPAIR_FLOW_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_INS_DEPTH_S11">
+      <column name="NOZZLE_INS_DEPTH_S11" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_INS_DEPTH_S12">
+      <column name="NOZZLE_INS_DEPTH_S12" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_INS_DEPTH_S13">
+      <column name="NOZZLE_INS_DEPTH_S13" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_INS_DEPTH_S21">
+      <column name="NOZZLE_INS_DEPTH_S21" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_INS_DEPTH_S22">
+      <column name="NOZZLE_INS_DEPTH_S22" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_INS_DEPTH_S23">
+      <column name="NOZZLE_INS_DEPTH_S23" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DOWN_GAP_DEPTH_S1">
+      <column name="DOWN_GAP_DEPTH_S1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DOWN_GAP_DEPTH_S2">
+      <column name="DOWN_GAP_DEPTH_S2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

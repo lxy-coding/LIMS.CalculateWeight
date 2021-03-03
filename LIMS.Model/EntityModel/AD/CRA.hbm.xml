@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRA" table="CRA" lazy="true" schema="AD" >
+    <id name="CRA_ID" column="CRA_ID">
+      <generator class="sequence">
+        <param name="sequence">S_CRA_ID</param>
+      </generator>
+    </id>
+    <property name="FIR_MAX_X">
+      <column name="FIR_MAX_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIR_MIN_X">
+      <column name="FIR_MIN_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="JOB_TYPE">
+      <column name="JOB_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BC_HEAVY_SPEED">
+      <column name="BC_HEAVY_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BC_SLIGHT_SPEED">
+      <column name="BC_SLIGHT_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BC_EMPTY_SPEED">
+      <column name="BC_EMPTY_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SC_HEAVY_SPEED">
+      <column name="SC_HEAVY_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SC_SLIGHT_SPEED">
+      <column name="SC_SLIGHT_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SC_EMPTY_SPEED">
+      <column name="SC_EMPTY_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAVY_HOIST_DURAT">
+      <column name="HEAVY_HOIST_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EMPTY_HOIST_DURAT">
+      <column name="EMPTY_HOIST_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAVY_DROP_DURAT">
+      <column name="HEAVY_DROP_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EMPTY_DROP_DURAT">
+      <column name="EMPTY_DROP_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DIRE">
+      <column name="DIRE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_X_SPEED">
+      <column name="MAX_X_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_Y_SPEED">
+      <column name="MAX_Y_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

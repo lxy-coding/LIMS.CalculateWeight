@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_BUCKET" table="SCRAP_BUCKET" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_SCRAP_BUCKET_ID</param>
+      </generator>
+    </id>
+    <property name="CODE">
+      <column name="CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LENGTH">
+      <column name="LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WIDTH">
+      <column name="WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEIGHT">
+      <column name="HEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TOTAL_USE_COUNT">
+      <column name="TOTAL_USE_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REPAIR_USE_COUNT">
+      <column name="REPAIR_USE_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

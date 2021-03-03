@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_BOF_PRODUCT_BENCHMARK" table="ST_BOF_PRODUCT_BENCHMARK" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_ST_BOF_PRODUCT_BENCHMARK_ID</param>
+      </generator>
+    </id>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MIN_SCRAP_WEIGHT">
+      <column name="MIN_SCRAP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_SCRAP_WEIGHT">
+      <column name="MAX_SCRAP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_COMMON_IRON">
+      <column name="MAX_COMMON_IRON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_LOW_NI_IRON">
+      <column name="MIN_LOW_NI_IRON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_DREGS_STEEL">
+      <column name="MIN_DREGS_STEEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_UNIFY_MATERIAL">
+      <column name="MIN_UNIFY_MATERIAL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_CLASS1_SCRAP">
+      <column name="MIN_CLASS1_SCRAP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_CLASS2_SCRAP">
+      <column name="MIN_CLASS2_SCRAP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_COMMON_IRON">
+      <column name="MIN_COMMON_IRON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_LOW_NI_IRON">
+      <column name="MAX_LOW_NI_IRON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_DREGS_STEEL">
+      <column name="MAX_DREGS_STEEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_UNIFY_MATERIAL">
+      <column name="MAX_UNIFY_MATERIAL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_CLASS1_SCRAP">
+      <column name="MAX_CLASS1_SCRAP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_CLASS2_SCRAP">
+      <column name="MAX_CLASS2_SCRAP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_IRON_WEIGHT">
+      <column name="MIN_IRON_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_IRON_WEIGHT">
+      <column name="MAX_IRON_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_C">
+      <column name="MIN_C" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_C">
+      <column name="MAX_C" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_SI">
+      <column name="MIN_SI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_SI">
+      <column name="MAX_SI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_MN">
+      <column name="MIN_MN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_MN">
+      <column name="MAX_MN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_P">
+      <column name="MIN_P" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_P">
+      <column name="MAX_P" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_S">
+      <column name="MIN_S" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_S">
+      <column name="MAX_S" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_AS">
+      <column name="MIN_AS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_AS">
+      <column name="MAX_AS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CLASS2_SCRAP_WEIGHT">
+      <column name="CLASS2_SCRAP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_TI">
+      <column name="MIN_TI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_TI">
+      <column name="MAX_TI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ACCEPT_TIME">
+      <column name="ACCEPT_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

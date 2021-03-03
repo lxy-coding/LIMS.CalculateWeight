@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_REAL_INFO" table="CRANE_REAL_INFO" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CRANE_REAL_INFO_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="CRA_ID" lazy="false" fetch="join" class="CRANE">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="COORD_X">
+      <column name="COORD_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COORD_Y">
+      <column name="COORD_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COORD_Z">
+      <column name="COORD_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_HOOK_Y">
+      <column name="LITTLE_HOOK_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_HOOK_Z">
+      <column name="LITTLE_HOOK_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ROTATE_Z">
+      <column name="ROTATE_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_ROTATE_Z">
+      <column name="LITTLE_ROTATE_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_HOOK_WEIGHT">
+      <column name="LITTLE_HOOK_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WORK_TYPE">
+      <column name="WORK_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="OBJ_NUM">
+      <column name="OBJ_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OBJ_COUNT">
+      <column name="OBJ_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="OVER_LOAD">
+      <column name="OVER_LOAD" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="HOOK_ID">
+      <column name="HOOK_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOAD_SYMBOL">
+      <column name="LOAD_SYMBOL" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="IS_ONLINE">
+      <column name="IS_ONLINE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="OBJ_STATUS_ID">
+      <column name="OBJ_STATUS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CON_NUM">
+      <column name="CON_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

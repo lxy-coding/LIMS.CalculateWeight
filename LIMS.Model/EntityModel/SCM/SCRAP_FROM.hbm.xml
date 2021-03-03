@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_FROM" table="SCRAP_FROM" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="BATCH">
+      <column name="BATCH" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CAR_ID">
+      <column name="CAR_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_TYPE_ID">
+      <column name="SCRAP_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PRODUCER">
+      <column name="PRODUCER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_POOL_ID">
+      <column name="SCRAP_POOL_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_VIRTUAL">
+      <column name="IS_VIRTUAL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIRST_USER">
+      <column name="FIRST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIRST_TIME">
+      <column name="FIRST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LAST_USER">
+      <column name="LAST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LAST_TIME">
+      <column name="LAST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SCRAP_LEVEL">
+      <column name="SCRAP_LEVEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CUT_WEIGHT">
+      <column name="CUT_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CAR_TYPE">
+      <column name="CAR_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IN_POOL_TIME">
+      <column name="IN_POOL_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="OUT_POOL_TIME">
+      <column name="OUT_POOL_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

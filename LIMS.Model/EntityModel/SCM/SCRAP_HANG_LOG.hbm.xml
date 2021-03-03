@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_HANG_LOG" table="SCRAP_HANG_LOG" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HANG_FLAG">
+      <column name="HANG_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CRANE_ID">
+      <column name="CRANE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SPA_ID">
+      <column name="SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_ID">
+      <column name="POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_X">
+      <column name="CENTRE_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Y">
+      <column name="CENTRE_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Z">
+      <column name="CENTRE_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLC_ORDER">
+      <column name="PLC_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HANG_TIME">
+      <column name="HANG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SCRAP_BUCKET_ID">
+      <column name="SCRAP_BUCKET_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

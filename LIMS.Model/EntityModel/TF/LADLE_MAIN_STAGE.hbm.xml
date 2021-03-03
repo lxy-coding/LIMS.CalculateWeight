@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_MAIN_STAGE" table="LADLE_MAIN_STAGE" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_MAIN_STAGE_ID</param>
+      </generator>
+    </id>
+    <property name="STAGE_NAM">
+      <column name="STAGE_NAM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="STAGE_NUM">
+      <column name="STAGE_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

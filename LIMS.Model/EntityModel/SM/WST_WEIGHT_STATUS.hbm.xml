@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WST_WEIGHT_STATUS" table="WST_WEIGHT_STATUS" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_WST_WEIGHT_STATUS_ID</param>
+      </generator>
+    </id>
+    <property name="OBJ_ID">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSIT">
+      <column name="POSIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DROP_STATUS">
+      <column name="DROP_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DROP_CRA_NUM">
+      <column name="DROP_CRA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DROP_TIME">
+      <column name="DROP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DROP_WEIGHT">
+      <column name="DROP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HOIST_STATUS">
+      <column name="HOIST_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HOIST_CRA_NUM">
+      <column name="HOIST_CRA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HOIST_TIME">
+      <column name="HOIST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="HOIST_WEIGHT">
+      <column name="HOIST_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POUR_STATUS">
+      <column name="POUR_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POUR_CRA_NUM">
+      <column name="POUR_CRA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_ARRIVE_TIME">
+      <column name="POUR_ARRIVE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BEFORE_POUR_WEIGHT">
+      <column name="BEFORE_POUR_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POUR_LEAVE_TIME">
+      <column name="POUR_LEAVE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="AFTER_POUR_WEIGHT">
+      <column name="AFTER_POUR_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CASTING_STATUS">
+      <column name="CASTING_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CASTING_CRA_NUM">
+      <column name="CASTING_CRA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CASTING_DROP_TIME">
+      <column name="CASTING_DROP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="TEMP_CRA_NUM">
+      <column name="TEMP_CRA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TEMP_WEIGHT">
+      <column name="TEMP_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CONT_NUM">
+      <column name="CONT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISLODGE_SLAG_WEIGHT">
+      <column name="DISLODGE_SLAG_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_WEIGHT">
+      <column name="MAX_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MIN_WEIGHT">
+      <column name="MIN_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FLAG">
+      <column name="FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_SEND">
+      <column name="IS_SEND" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

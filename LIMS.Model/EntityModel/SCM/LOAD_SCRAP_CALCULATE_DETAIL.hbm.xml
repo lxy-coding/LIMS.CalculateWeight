@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LOAD_SCRAP_CALCULATE_DETAIL" table="LOAD_SCRAP_CALCULATE_DETAIL" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="LOAD_SCRAP_CALCULATE_ID">
+      <column name="LOAD_SCRAP_CALCULATE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_WEIGHT">
+      <column name="PLAN_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REAL_WEIGHT">
+      <column name="REAL_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CONFIRM_WEIGHT">
+      <column name="CONFIRM_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIRST_USER">
+      <column name="FIRST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIRST_TIME">
+      <column name="FIRST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LAST_USER">
+      <column name="LAST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LAST_TIME">
+      <column name="LAST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SCRAP_TYPE_ID">
+      <column name="SCRAP_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CRANE_ID">
+      <column name="CRANE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATERIAL_SEQ">
+      <column name="MATERIAL_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

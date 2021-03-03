@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="USER_LOAD_RECORD" table="USER_LOAD_RECORD" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="USER_ID">
+      <column name="USER_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOAD_STATUS">
+      <column name="LOAD_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOAD_IP">
+      <column name="LOAD_IP" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LOAD_MAC">
+      <column name="LOAD_MAC" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

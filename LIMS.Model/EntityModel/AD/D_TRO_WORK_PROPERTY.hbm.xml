@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="D_TRO_WORK_PROPERTY" table="D_TRO_WORK_PROPERTY" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_D_TRO_WORK_PROPERTY_ID</param>
+      </generator>
+    </id>
+    <property name="TRO_NUM">
+      <column name="TRO_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="TRO_NAM">
+      <column name="TRO_NAM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="TRO_TYPE">
+      <column name="TRO_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="SPA_ID_COLLECTION">
+      <column name="SPA_ID_COLLECTION" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="AVE_X_SPEED">
+      <column name="AVE_X_SPEED" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="UP_X_SPEED">
+      <column name="UP_X_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_X_SPEED">
+      <column name="DOWN_X_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

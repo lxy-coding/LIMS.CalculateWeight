@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_PLAN_COM" table="SCRAP_PLAN_COM" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="INTERFACE_ID">
+      <column name="INTERFACE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="EAT_NO">
+      <column name="EAT_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLANNED_CHARGING">
+      <column name="PLANNED_CHARGING" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

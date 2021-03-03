@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="STEEL_CON_MANU" table="STEEL_CON_MANU" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_STEEL_CON_MANU_ID</param>
+      </generator>
+    </id>
+    <property name="CON_TYPE">
+      <column name="CON_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="COMP_NAM">
+      <column name="COMP_NAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MANU_NAM">
+      <column name="MANU_NAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MANU_DIRECTOR">
+      <column name="MANU_DIRECTOR" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MANU_ADDRESS">
+      <column name="MANU_ADDRESS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MANU_TEL">
+      <column name="MANU_TEL" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PURCHASE_TIME">
+      <column name="PURCHASE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="XML_DATA">
+      <column name="XML_DATA" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

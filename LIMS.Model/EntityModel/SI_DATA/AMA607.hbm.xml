@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AMA607" table="AMA607" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROC_NO">
+      <column name="PROC_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEV_CODE">
+      <column name="DEV_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SM_PLAN_NO">
+      <column name="SM_PLAN_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PONO">
+      <column name="PONO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TEMP_VAL">
+      <column name="TEMP_VAL" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MEASURE_TIME">
+      <column name="MEASURE_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

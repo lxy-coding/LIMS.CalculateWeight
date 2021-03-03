@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WH_TRO_ORDER" table="WH_TRO_ORDER" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="ORDER_GROUP_SN">
+      <column name="ORDER_GROUP_SN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_GUID">
+      <column name="PLAN_GUID" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="JOB_TYPE">
+      <column name="JOB_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLAB_SN">
+      <column name="SLAB_SN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TRO_ID">
+      <column name="TRO_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_SPA_ID">
+      <column name="START_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_SPA_ID">
+      <column name="END_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="TIP_TIME">
+      <column name="TIP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="IS_READ">
+      <column name="IS_READ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_SEQ">
+      <column name="EXECUTE_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RECOMMEND_SEQ">
+      <column name="RECOMMEND_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_POSI">
+      <column name="START_POSI" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="END_POSI">
+      <column name="END_POSI" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REALITY_END_SPA_ID">
+      <column name="REALITY_END_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REALITY_END_HP_ID">
+      <column name="REALITY_END_HP_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_POSITION_ID">
+      <column name="START_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_POSITION_ID">
+      <column name="END_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_STATUS">
+      <column name="SELECT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_STATUS">
+      <column name="EXECUTE_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAIL_REASON">
+      <column name="FAIL_REASON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_LAST_ORDER">
+      <column name="IS_LAST_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

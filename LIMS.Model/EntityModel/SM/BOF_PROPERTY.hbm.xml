@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BOF_PROPERTY" table="BOF_PROPERTY" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_BOF_PROPERTY_ID</param>
+      </generator>
+    </id>
+    <property name="OBJ_ID">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TAP_WST">
+      <column name="TAP_WST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HOIST_WST">
+      <column name="HOIST_WST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="AR_WST">
+      <column name="AR_WST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

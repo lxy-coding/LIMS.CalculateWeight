@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_SCRAP_IN_POOL_ORDER" table="ST_SCRAP_IN_POOL_ORDER" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="TO_POOL_ORDER_NUM">
+      <column name="TO_POOL_ORDER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TO_POOL_PLAN_GUID">
+      <column name="TO_POOL_PLAN_GUID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_NUM">
+      <column name="SCRAP_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POOL_ID">
+      <column name="POOL_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SPA_ID">
+      <column name="SPA_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MODIFY_TIME">
+      <column name="MODIFY_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="EVENT_FLAG">
+      <column name="EVENT_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RECOMMEND_SEQ">
+      <column name="RECOMMEND_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_STATUS">
+      <column name="SELECT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_STATUS">
+      <column name="EXECUTE_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAIL_REASON">
+      <column name="FAIL_REASON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_LAST_ORDER">
+      <column name="IS_LAST_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

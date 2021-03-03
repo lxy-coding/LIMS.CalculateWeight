@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_COLD_REPAIR" table="LADLE_COLD_REPAIR" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="COLD_REPAIR_TIME">
+      <column name="COLD_REPAIR_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REPAIR_CLASS">
+      <column name="REPAIR_CLASS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REFRACTORY_MANU">
+      <column name="REFRACTORY_MANU" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NEW_LADLE_ONLINE_TIME">
+      <column name="NEW_LADLE_ONLINE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="NEW_LADLE_BUILD_TIME">
+      <column name="NEW_LADLE_BUILD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LAYER_LIFE">
+      <column name="LAYER_LIFE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ONLINE_TIME">
+      <column name="ONLINE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DOWNLINE_TIME">
+      <column name="DOWNLINE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DOWNLINE_CLASS">
+      <column name="DOWNLINE_CLASS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_LIFE">
+      <column name="LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ACCUMULATE_LIFE">
+      <column name="ACCUMULATE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="NEW_SLAG_BRICK_THICK">
+      <column name="NEW_SLAG_BRICK_THICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LAST_SLAG_BRICK_THICK">
+      <column name="LAST_SLAG_BRICK_THICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLAG_BRICK_THICKNESS">
+      <column name="SLAG_BRICK_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_THICKNESS">
+      <column name="WALL_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PUROUS_THICKNESS">
+      <column name="PUROUS_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ACCOUNT">
+      <column name="IS_ACCOUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_MATERIAL_TYPE">
+      <column name="LADLE_MATERIAL_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UNPACK_REMARK">
+      <column name="UNPACK_REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REPAIR_REMARK">
+      <column name="REPAIR_REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DOWNLINE_REASON">
+      <column name="DOWNLINE_REASON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CONID">
+      <column name="CONID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="ONLINE_POSIT">
+      <column name="ONLINE_POSIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ONLINE">
+      <column name="IS_ONLINE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_THICKNESS">
+      <column name="BOTTOM_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_TAMP">
+      <column name="TIME_TAMP" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

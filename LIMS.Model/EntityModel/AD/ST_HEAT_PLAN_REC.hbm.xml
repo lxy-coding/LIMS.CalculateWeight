@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_HEAT_PLAN_REC" table="ST_HEAT_PLAN_REC" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EVENT_FLAG">
+      <column name="EVENT_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CASTING_NUM">
+      <column name="CASTING_NUM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSIT_IN_CAST">
+      <column name="POSIT_IN_CAST" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HML_NUM">
+      <column name="HML_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_NUM">
+      <column name="SLOT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_ROUTE">
+      <column name="SLOT_ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="H_ROUTE">
+      <column name="H_ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FACILITY_QUAN">
+      <column name="FACILITY_QUAN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POUR_START_TIME">
+      <column name="POUR_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="POUR_END_TIME">
+      <column name="POUR_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PRE_START_TIME">
+      <column name="PRE_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PRE_END_TIME">
+      <column name="PRE_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOF_START_TIME">
+      <column name="BOF_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOF_END_TIME">
+      <column name="BOF_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LF_START_TIME">
+      <column name="LF_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LF_END_TIME">
+      <column name="LF_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="RH_START_TIME">
+      <column name="RH_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="RH_END_TIME">
+      <column name="RH_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CC_START_TIME">
+      <column name="CC_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CC_END_TIME">
+      <column name="CC_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="TIME_STATMP">
+      <column name="TIME_STATMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="EXECUTE_SEQ">
+      <column name="EXECUTE_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_LAST_PLAN">
+      <column name="IS_LAST_PLAN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MATCH_SCRAP_START">
+      <column name="MATCH_SCRAP_START" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MATCH_SCRAP_END">
+      <column name="MATCH_SCRAP_END" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CHARGE_SCRAP_START">
+      <column name="CHARGE_SCRAP_START" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CHARGE_SCRAP_END">
+      <column name="CHARGE_SCRAP_END" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SLOT_BACK">
+      <column name="SLOT_BACK" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MODIFY_STATUS">
+      <column name="MODIFY_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

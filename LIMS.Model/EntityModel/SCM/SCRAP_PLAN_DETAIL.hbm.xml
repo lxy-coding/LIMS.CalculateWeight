@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_PLAN_DETAIL" table="SCRAP_PLAN_DETAIL" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="SCRAP_PLAN_ID">
+      <column name="SCRAP_PLAN_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_TYPE_ID">
+      <column name="SCRAP_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_BUCKET_ID">
+      <column name="SCRAP_BUCKET_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_MATCH_WEIGHT">
+      <column name="PLAN_MATCH_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_MATCH_TIME">
+      <column name="PLAN_MATCH_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REAL_MATCH_TIME">
+      <column name="REAL_MATCH_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PLAN_LOAD_WEIGHT">
+      <column name="PLAN_LOAD_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_LOAD_TIME">
+      <column name="PLAN_LOAD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REAL_LOAD_TIME">
+      <column name="REAL_LOAD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LOAD_BUCKET_LOCATION">
+      <column name="LOAD_BUCKET_LOCATION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIRST_USER">
+      <column name="FIRST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIRST_TIME">
+      <column name="FIRST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LAST_USER">
+      <column name="LAST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LAST_TIME">
+      <column name="LAST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

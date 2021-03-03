@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="AMA624" table="AMA624" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_NO">
+      <column name="PROD_SHIFT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_GROUP">
+      <column name="PROD_SHIFT_GROUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_MAKER">
+      <column name="PROD_MAKER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_TYPE">
+      <column name="MAT_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MOVE_TYPE">
+      <column name="MOVE_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_NO">
+      <column name="MAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SOU_POS">
+      <column name="SOU_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DES_POS">
+      <column name="DES_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="INOUTPUT_PLAN">
+      <column name="INOUTPUT_PLAN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOCK_NO">
+      <column name="STOCK_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOCK_PLACE_NO">
+      <column name="STOCK_PLACE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LAYER_NO">
+      <column name="LAYER_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SEQ_NO">
+      <column name="SEQ_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CHARGED_STATUS">
+      <column name="CHARGED_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_FLAG">
+      <column name="PLAN_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACKUP">
+      <column name="BACKUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

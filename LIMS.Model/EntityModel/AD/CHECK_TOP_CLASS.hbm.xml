@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CHECK_TOP_CLASS" table="CHECK_TOP_CLASS" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CHECK_TOP_CLASS_ID</param>
+      </generator>
+    </id>
+    <property name="CLASS_NAME">
+      <column name="CLASS_NAME" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="CHI_NAME">
+      <column name="CHI_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ANNOTATION">
+      <column name="ANNOTATION" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <bag name="CHECK_BOTTOM_CLASS" lazy="false">
+      <key column="TOP_ID" />
+      <one-to-many class="CHECK_BOTTOM_CLASS" />
+    </bag>
+    <bag name="CHECK_DEPLOY_MAP" lazy="false">
+      <key column="TOP_ID" />
+      <one-to-many class="CHECK_DEPLOY_MAP" />
+    </bag>
+  </class>
+</hibernate-mapping>

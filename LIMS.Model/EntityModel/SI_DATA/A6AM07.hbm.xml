@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="A6AM07" table="A6AM07" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GL_NO">
+      <column name="GL_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_NO">
+      <column name="IRON_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_LADLE_NO">
+      <column name="IRON_LADLE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_LADLE_LIFE">
+      <column name="IRON_LADLE_LIFE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="VEHICLE_NO">
+      <column name="VEHICLE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GROSS_WT">
+      <column name="GROSS_WT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TARE_WT">
+      <column name="TARE_WT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NET_WT">
+      <column name="NET_WT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="WEIGH_SITE">
+      <column name="WEIGH_SITE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PONDER_TIME">
+      <column name="PONDER_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="EMPTY_TIME">
+      <column name="EMPTY_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_TEMP">
+      <column name="IRON_TEMP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_TEMP_TIME">
+      <column name="IRON_TEMP_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TAP_START_TIME">
+      <column name="TAP_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TAP_END_TIME">
+      <column name="TAP_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ISSUE_TIME">
+      <column name="ISSUE_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_BATCH_NO">
+      <column name="HEAT_BATCH_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+
+  </class>
+</hibernate-mapping>

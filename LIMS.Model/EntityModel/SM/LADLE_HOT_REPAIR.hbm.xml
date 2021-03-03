@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_HOT_REPAIR" table="LADLE_HOT_REPAIR" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_HOT_REPAIR_ID</param>
+      </generator>
+    </id>
+    <property name="HEAT_MATCH_LADLE_ID">
+      <column name="HEAT_MATCH_LADLE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLIDE_OPERATOR">
+      <column name="SLIDE_OPERATOR" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_CLASS">
+      <column name="LADLE_CLASS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="USING_STATUS">
+      <column name="USING_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAINTAIN_TYPE">
+      <column name="MAINTAIN_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="THERMAL_STATUS">
+      <column name="THERMAL_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_EDGE_SLAG">
+      <column name="LADLE_EDGE_SLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ROUTE">
+      <column name="ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_LIFE">
+      <column name="LADLE_LIFE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_LIFE">
+      <column name="SLIDE_LIFE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="UP_NOZZLE_LIFE">
+      <column name="UP_NOZZLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_NOZZLE_LIFE">
+      <column name="DOWN_NOZZLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="NOZZLE_BRICK_LIFE">
+      <column name="NOZZLE_BRICK_LIFE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLAG_BRICK_LIFE">
+      <column name="SLAG_BRICK_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POROUS_BRICK_LIFE">
+      <column name="POROUS_BRICK_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LF_LIFE">
+      <column name="LF_LIFE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="RH_LIFE">
+      <column name="RH_LIFE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_CTEMP">
+      <column name="STEEL_CTEMP" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_COVER">
+      <column name="BOF_COVER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REFINE_COVER">
+      <column name="REFINE_COVER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_IN_TEMP">
+      <column name="WALL_IN_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_EX_TEMP">
+      <column name="WALL_EX_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_IN_TEMP">
+      <column name="BOTTOM_IN_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_EX_TEMP">
+      <column name="BOTTOM_EX_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HIGHER_NOZZLE_DIAM">
+      <column name="HIGHER_NOZZLE_DIAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="EAST_POROUS_DEPTH">
+      <column name="EAST_POROUS_DEPTH" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WEST_POROUS_DEPTH">
+      <column name="WEST_POROUS_DEPTH" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="AUTO_OPENED">
+      <column name="AUTO_OPENED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STUFFING_SAND">
+      <column name="STUFFING_SAND" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DEAL_POROUS_BRICK">
+      <column name="DEAL_POROUS_BRICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STANDBY_LADLE_CTEMP1">
+      <column name="STANDBY_LADLE_CTEMP1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STANDBY_LADLE_CTEMP2">
+      <column name="STANDBY_LADLE_CTEMP2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_MECHANISM_GAP">
+      <column name="SLIDE_MECHANISM_GAP" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLAG_BRICK_THICK">
+      <column name="SLAG_BRICK_THICK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WALL_THICK">
+      <column name="WALL_THICK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_THICK">
+      <column name="BOTTOM_THICK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_MECHANISM_MANU">
+      <column name="SLIDE_MECHANISM_MANU" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NOZZLE_MANU">
+      <column name="NOZZLE_MANU" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BUILDING_MANU">
+      <column name="BUILDING_MANU" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLIDE_GATE_MANU">
+      <column name="SLIDE_GATE_MANU" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="INNER_LAYER_MANU">
+      <column name="INNER_LAYER_MANU" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TIME_TAMP">
+      <column name="TIME_TAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CONID">
+      <column name="CONID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_STATUS">
+      <column name="LADLE_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_GRADE">
+      <column name="STEEL_GRADE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="USE_TIME">
+      <column name="USE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="IS_USE">
+      <column name="IS_USE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSIT">
+      <column name="POSIT" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

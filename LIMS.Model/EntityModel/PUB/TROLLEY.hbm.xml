@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TROLLEY" table="TROLLEY" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_TROLLEY_ID</param>
+      </generator>
+    </id>
+    <property name="NUM">
+      <column name="NUM" sql-type="VARCHAR2" not-null="false" unique="true" />
+    </property>
+    <property name="OBJ_TYPE_ID">
+      <column name="OBJ_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SPA_ID_GATHER">
+      <column name="SPA_ID_GATHER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="AREA_ID_GATHER">
+      <column name="AREA_ID_GATHER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSITION_ID_GATHER">
+      <column name="POSITION_ID_GATHER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DIRECTION">
+      <column name="DIRECTION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MIN">
+      <column name="WALK_MIN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MAX">
+      <column name="WALK_MAX" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SADDLE_NUM_GATHER">
+      <column name="SADDLE_NUM_GATHER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BASIC_LOAD_WEIGHT">
+      <column name="BASIC_LOAD_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RAIL_ID">
+      <column name="RAIL_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OBJ_ID">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TROLLEY_TYPE">
+      <column name="TROLLEY_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TRO_MAX_SPEED">
+      <column name="TRO_MAX_SPEED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO">
+      <column name="ZERO" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_OOFSET">
+      <column name="ZERO_OOFSET" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_DIRECTION">
+      <column name="ZERO_DIRECTION" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

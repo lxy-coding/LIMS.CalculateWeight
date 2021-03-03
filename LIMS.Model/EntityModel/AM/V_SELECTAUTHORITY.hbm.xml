@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="V_SELECTAUTHORITY" table="V_SELECTAUTHORITY" lazy="false" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_V_SELECTAUTHORITY_ID</param>
+      </generator>
+    </id>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="USER_NUM">
+      <column name="USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PAR_RESOURCE_ID">
+      <column name="PAR_RESOURCE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

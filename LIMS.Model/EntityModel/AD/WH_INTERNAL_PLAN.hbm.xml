@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WH_INTERNAL_PLAN" table="WH_INTERNAL_PLAN" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="FATHER_PLAN_GUID">
+      <column name="FATHER_PLAN_GUID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BUSI_ID">
+      <column name="BUSI_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="OBJ_TYPE">
+      <column name="OBJ_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="OBJ_ID">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="JOB_TYPE">
+      <column name="JOB_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="SLAB_SN">
+      <column name="SLAB_SN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="THING_NAME">
+      <column name="THING_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="START_SPA_ID">
+      <column name="START_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_SPA_NAME">
+      <column name="START_SPA_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="START_AREA_ID">
+      <column name="START_AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_AREA_NAME">
+      <column name="START_AREA_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="START_POSITION_ID">
+      <column name="START_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_POSITION_NAME">
+      <column name="START_POSITION_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="START_ROW">
+      <column name="START_ROW" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_COLUMN">
+      <column name="START_COLUMN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_LAYER">
+      <column name="START_LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_X_COORD">
+      <column name="START_X_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_Y_COORD">
+      <column name="START_Y_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_Z_COORD">
+      <column name="START_Z_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_SPA_ID">
+      <column name="END_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_SPA_NAME">
+      <column name="END_SPA_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="END_AREA_ID">
+      <column name="END_AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_AREA_NAME">
+      <column name="END_AREA_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="END_POSITION_ID">
+      <column name="END_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_POSITION_NAME">
+      <column name="END_POSITION_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="END_ROW">
+      <column name="END_ROW" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_COLUMN">
+      <column name="END_COLUMN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_LAYER">
+      <column name="END_LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_X_COORD">
+      <column name="END_X_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_Y_COORD">
+      <column name="END_Y_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_Z_COORD">
+      <column name="END_Z_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PLAN_FROM">
+      <column name="PLAN_FROM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_SCORE">
+      <column name="EXECUTE_SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_EXECUTE_SCORE">
+      <column name="SELECT_EXECUTE_SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_SCORE">
+      <column name="SELECT_SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_PLAN_CANCEL">
+      <column name="IS_PLAN_CANCEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ORIGIN_PLAN_SN">
+      <column name="ORIGIN_PLAN_SN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_EXECUTE_MODIFY">
+      <column name="IS_EXECUTE_MODIFY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="IS_LAST_PLAN">
+      <column name="IS_LAST_PLAN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

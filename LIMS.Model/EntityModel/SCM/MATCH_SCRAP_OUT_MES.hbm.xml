@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MATCH_SCRAP_OUT_MES" table="MATCH_SCRAP_OUT_MES" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HEAT_PLAN_ID">
+      <column name="HEAT_PLAN_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_ID">
+      <column name="HEAT_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BUCKET_ID">
+      <column name="BUCKET_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_COUNT">
+      <column name="MAT_COUNT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

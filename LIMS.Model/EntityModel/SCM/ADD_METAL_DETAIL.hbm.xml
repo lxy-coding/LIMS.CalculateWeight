@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ADD_METAL_DETAIL" table="ADD_METAL_DETAIL" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="ADD_METAL_ID">
+      <column name="ADD_METAL_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="METAL_TYPE_ID">
+      <column name="METAL_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_WEIGHT">
+      <column name="PLAN_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REAL_WEIGHT">
+      <column name="REAL_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIRST_USER">
+      <column name="FIRST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIRST_TIME">
+      <column name="FIRST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LAST_USER">
+      <column name="LAST_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LAST_TIME">
+      <column name="LAST_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MASTERID">
+      <column name="MASTERID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

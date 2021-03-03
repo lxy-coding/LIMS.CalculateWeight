@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_DOT_DOT_PLAN_BASE" table="ST_DOT_DOT_PLAN_BASE" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="HEAT_ID">
+      <column name="HEAT_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_TRANS_ID">
+      <column name="PLAN_TRANS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CON_ID">
+      <column name="CON_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CON_WEIGHT">
+      <column name="CON_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_SPA_ID">
+      <column name="START_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_SPA_ID">
+      <column name="END_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WORK_TYPE">
+      <column name="WORK_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_WST_ID">
+      <column name="START_WST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_WST_ID">
+      <column name="END_WST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_TIME">
+      <column name="START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="END_TIME">
+      <column name="END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EVENT_FLAG">
+      <column name="EVENT_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MODIFY_TIME">
+      <column name="MODIFY_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PLAN_ORGIN">
+      <column name="PLAN_ORGIN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAILURE_REASON">
+      <column name="FAILURE_REASON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="EXECUTE_SEQ">
+      <column name="EXECUTE_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_SCORE">
+      <column name="EXECUTE_SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_EXECUTE_SCORE">
+      <column name="SELECT_EXECUTE_SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_SCORE">
+      <column name="SELECT_SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_PLAN_CANCEL">
+      <column name="IS_PLAN_CANCEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_EXECUTE_MODIFY">
+      <column name="IS_EXECUTE_MODIFY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_LAST_PLAN">
+      <column name="IS_LAST_PLAN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MODIFY_STATUS">
+      <column name="MODIFY_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

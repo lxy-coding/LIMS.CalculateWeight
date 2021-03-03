@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="V_USER_POWER" table="V_USER_POWER" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_RESOURCE_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="NUM">
+      <column name="NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SELECTED">
+      <column name="SELECTED" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PAR_RESOURCE_NUM">
+      <column name="PAR_RESOURCE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISP_INDEX">
+      <column name="DISP_INDEX" sql-type="NUMBER" not-null="false" />
+    </property>
+    <many-to-one name="PAR_RESOURCE_ID" lazy="false" fetch="join" class="RESOURCE_INFO">
+      <column name="PAR_RESOURCE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="URL">
+      <column name="URL" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LEVELS">
+      <column name="LEVELS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ICON">
+      <column name="ICON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENABLE_FLAG">
+      <column name="ENABLE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <many-to-one name="ROLE_ID" lazy="false" fetch="join" class="ROLE_INFO">
+      <column name="ROLE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <many-to-one name="USER_ID" lazy="false" fetch="join" class="USER_INFO">
+      <column name="USER_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

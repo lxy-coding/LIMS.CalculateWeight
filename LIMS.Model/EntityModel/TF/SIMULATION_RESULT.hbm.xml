@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SIMULATION_RESULT" table="SIMULATION_RESULT" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSIT">
+      <column name="POSIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_TEMP">
+      <column name="STEEL_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_SHELL_DIST">
+      <column name="BOTTOM_SHELL_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WALL_SHELL_DIST">
+      <column name="WALL_SHELL_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_DIST">
+      <column name="BOTTOM_PERMANENT_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_WORK_DIST">
+      <column name="BOTTOM_WORK_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WALL_INSULATE_DIST">
+      <column name="WALL_INSULATE_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_DIST">
+      <column name="WALL_PERMANENT_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WALL_WORK_DIST">
+      <column name="WALL_WORK_DIST" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

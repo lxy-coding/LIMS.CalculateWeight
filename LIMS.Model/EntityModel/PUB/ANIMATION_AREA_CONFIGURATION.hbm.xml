@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ANIMATION_AREA_CONFIGURATION" table="ANIMATION_AREA_CONFIGURATION" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_ANIMATION_AREA_CONFIGURATION_ID</param>
+      </generator>
+    </id>
+    <property name="NUM">
+      <column name="NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CENTRE_X">
+      <column name="CENTRE_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Y">
+      <column name="CENTRE_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LENGTH">
+      <column name="LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WIDTH">
+      <column name="WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="AREA_TYPE">
+      <column name="AREA_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

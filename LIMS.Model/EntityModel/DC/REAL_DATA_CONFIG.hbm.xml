@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="REAL_DATA_CONFIG" table="REAL_DATA_CONFIG" lazy="true" schema="DC" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_REAL_DATA_CONFIG_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="REAL_DATA_DEVICE_ID" lazy="false" fetch="join" class="REAL_DATA_DEVICE">
+      <column name="REAL_DATA_DEVICE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <many-to-one name="DATA_POINT_ID" lazy="false" fetch="join" class="OPC_DATA_POINT">
+      <column name="DATA_POINT_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="FIELD_NAME">
+      <column name="FIELD_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD_DATA_TYPE">
+      <column name="FIELD_DATA_TYPE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENABLE">
+      <column name="ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD_DATA_LENGTH">
+      <column name="FIELD_DATA_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

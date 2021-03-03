@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MATCH_SCRAP_OUT_DETAIL" table="MATCH_SCRAP_OUT_DETAIL" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="MATCH_SCRAP_OUT_ID">
+      <column name="MATCH_SCRAP_OUT_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BATCH_NUMBER">
+      <column name="BATCH_NUMBER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_TYPE_ID">
+      <column name="SCRAP_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOCATION">
+      <column name="LOCATION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LOAD_TIME">
+      <column name="LOAD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PLAN_WEIGHT">
+      <column name="PLAN_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_BUCKET_LOG_DETAIL" table="SCRAP_BUCKET_LOG_DETAIL" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="SCRAP_BUCKET_LOG_ID">
+      <column name="SCRAP_BUCKET_LOG_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_TYPE_ID">
+      <column name="SCRAP_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

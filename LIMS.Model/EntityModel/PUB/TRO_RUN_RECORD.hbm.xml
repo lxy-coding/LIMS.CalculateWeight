@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="TRO_RUN_RECORD" table="TRO_RUN_RECORD" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <many-to-one name="TRO_ID" lazy="false" fetch="join" class="TROLLEY">
+      <column name="TRO_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="COORD_X">
+      <column name="COORD_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COORD_Y">
+      <column name="COORD_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_HOOK_Y">
+      <column name="LITTLE_HOOK_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOAD_SYMBOL">
+      <column name="LOAD_SYMBOL" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="STEEL_CODE_GATHER">
+      <column name="STEEL_CODE_GATHER" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="HEAT_CODE">
+      <column name="HEAT_CODE" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="WORK_STATE">
+      <column name="WORK_STATE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ONLINE">
+      <column name="IS_ONLINE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="OBJ_STATUS_ID">
+      <column name="OBJ_STATUS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

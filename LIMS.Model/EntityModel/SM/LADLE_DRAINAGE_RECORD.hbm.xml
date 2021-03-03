@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_DRAINAGE_RECORD" table="LADLE_DRAINAGE_RECORD" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="COOL_REPAIR_NUM">
+      <column name="COOL_REPAIR_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="HOT_REPAIR_NUM">
+      <column name="HOT_REPAIR_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="LADLE_TYPE">
+      <column name="LADLE_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="MAINTAIN_TYPE">
+      <column name="MAINTAIN_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TOTAL_LADLE_LIFE">
+      <column name="TOTAL_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CURRENT_LADLE_LIFE">
+      <column name="CURRENT_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_NUM">
+      <column name="BOF_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="CCM_NUM">
+      <column name="CCM_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="DRAINAGE_RESULT">
+      <column name="DRAINAGE_RESULT" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

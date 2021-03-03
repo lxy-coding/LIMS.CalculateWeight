@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BOF_HEAT_STATUS" table="BOF_HEAT_STATUS" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_BOF_HEAT_STATUS_ID</param>
+      </generator>
+    </id>
+    <property name="BOF_ID">
+      <column name="BOF_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_ROUTE">
+      <column name="HEAT_ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_GRADE">
+      <column name="STEEL_GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_STATUS">
+      <column name="HEAT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_TIME">
+      <column name="START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REMAIN_DURAT">
+      <column name="REMAIN_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TAP_STEEL_TEMP">
+      <column name="TAP_STEEL_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TAP_STEEL_TEMP_TIME">
+      <column name="TAP_STEEL_TEMP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

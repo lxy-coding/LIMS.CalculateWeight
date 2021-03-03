@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="PLAN_BASIC_INFO" table="PLAN_BASIC_INFO" lazy="true" schema="AD" >
+    <id name="PLAN_ID" column="PLAN_ID">
+      <generator class="sequence">
+        <param name="sequence">S_PLAN_BASIC_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="PLAN_TYPE">
+      <column name="PLAN_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RULE_ID_GATHER">
+      <column name="RULE_ID_GATHER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_NAME">
+      <column name="PLAN_NAME" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="PLAN_CLASS">
+      <column name="PLAN_CLASS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_ANNOTATION">
+      <column name="PLAN_ANNOTATION" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <bag name="OPERATOR_DEPLOY" lazy="false">
+      <key column="PLAN_ID" />
+      <one-to-many class="OPERATOR_DEPLOY" />
+    </bag>
+    <bag name="PLAN_MAP" lazy="false">
+      <key column="PLAN_ID" />
+      <one-to-many class="PLAN_MAP" />
+    </bag>
+  </class>
+</hibernate-mapping>

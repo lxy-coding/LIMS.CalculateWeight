@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_TEMP_PLAN_REC" table="ST_TEMP_PLAN_REC" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ARTICLE_TYPE">
+      <column name="ARTICLE_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_WST_ID">
+      <column name="START_WST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_WST_ID">
+      <column name="END_WST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SPA_ID">
+      <column name="SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CRA_ID">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_TIME">
+      <column name="START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="END_TIME">
+      <column name="END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="OCCUPY_DURAT">
+      <column name="OCCUPY_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="USER_NUM">
+      <column name="USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_ORGIN">
+      <column name="PLAN_ORGIN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAILURE_REASON">
+      <column name="FAILURE_REASON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_PLAN_CANCEL">
+      <column name="IS_PLAN_CANCEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CANCEL_TIME">
+      <column name="CANCEL_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MODIFY_STATUS">
+      <column name="MODIFY_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

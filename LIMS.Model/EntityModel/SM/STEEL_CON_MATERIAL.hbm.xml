@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="STEEL_CON_MATERIAL" table="STEEL_CON_MATERIAL" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_STEEL_CON_MATERIAL_ID</param>
+      </generator>
+    </id>
+    <property name="CON_TYPE">
+      <column name="CON_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="MATERIAL_NAM">
+      <column name="MATERIAL_NAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="COMP_NAM">
+      <column name="COMP_NAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MANU_MAN">
+      <column name="MANU_MAN" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="XML_DATA">
+      <column name="XML_DATA" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

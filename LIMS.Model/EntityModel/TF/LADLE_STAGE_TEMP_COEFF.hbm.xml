@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_STAGE_TEMP_COEFF" table="LADLE_STAGE_TEMP_COEFF" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_STAGE_TEMP_COEFF_ID</param>
+      </generator>
+    </id>
+    <property name="COEFF_NAM">
+      <column name="COEFF_NAM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="COEFF_NUM">
+      <column name="COEFF_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="COEFF_VALUE">
+      <column name="COEFF_VALUE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="MAIN_STAGE_ID">
+      <column name="MAIN_STAGE_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="SUB_STAGE_ID">
+      <column name="SUB_STAGE_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="LADLE_SHAPE_TYPE">
+      <column name="LADLE_SHAPE_TYPE" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="REFINE_TYPE">
+      <column name="REFINE_TYPE" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

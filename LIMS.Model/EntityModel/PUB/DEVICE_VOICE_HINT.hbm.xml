@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="DEVICE_VOICE_HINT" table="DEVICE_VOICE_HINT" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_DEVICE_VOICE_HINT_ID</param>
+      </generator>
+    </id>
+    <property name="CRA_ID">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="VOICE_TYPE">
+      <column name="VOICE_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="VOICE_CONTENT">
+      <column name="VOICE_CONTENT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAY_COUNT">
+      <column name="PLAY_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PRIORITY">
+      <column name="PRIORITY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_PLAY">
+      <column name="IS_PLAY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="VALUE_RANGE">
+      <column name="VALUE_RANGE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

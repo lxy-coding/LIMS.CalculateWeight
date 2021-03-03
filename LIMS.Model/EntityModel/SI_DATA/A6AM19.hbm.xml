@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="A6AM19" table="A6AM19" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_NO">
+      <column name="PROD_SHIFT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_SHIFT_GROUP">
+      <column name="PROD_SHIFT_GROUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_MAKER">
+      <column name="PROD_MAKER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="VEHICLE_NO">
+      <column name="VEHICLE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOPPER_NO">
+      <column name="HOPPER_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_ID">
+      <column name="REFE_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NET_WEIGHT">
+      <column name="NET_WEIGHT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TARE">
+      <column name="TARE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GROSS_WEIGHT">
+      <column name="GROSS_WEIGHT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_STATUS">
+      <column name="REFE_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_ID">
+      <column name="PROD_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROD_CNAME">
+      <column name="PROD_CNAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SRC_DEPT_ID">
+      <column name="SRC_DEPT_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SRC_DEPT_NAME">
+      <column name="SRC_DEPT_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SRC_STOCK_ID">
+      <column name="SRC_STOCK_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SRC_STOCK_NAME">
+      <column name="SRC_STOCK_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEST_DEPT_ID">
+      <column name="DEST_DEPT_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEST_DEPT_NAME">
+      <column name="DEST_DEPT_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEST_STOCK_ID">
+      <column name="DEST_STOCK_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEST_STOCK_NAME">
+      <column name="DEST_STOCK_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BUSINESS_TYPE">
+      <column name="BUSINESS_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_TYPE">
+      <column name="REFE_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_DATE">
+      <column name="REFE_DATE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_CREATOR">
+      <column name="REFE_CREATOR" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BAR_CODE">
+      <column name="BAR_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MATWET1">
+      <column name="MATWET1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MATWET2">
+      <column name="MATWET2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MATWET3">
+      <column name="MATWET3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MATWET4">
+      <column name="MATWET4" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MATWET5">
+      <column name="MATWET5" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MATWET6">
+      <column name="MATWET6" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

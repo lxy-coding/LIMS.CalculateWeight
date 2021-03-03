@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE" table="CRANE" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CRANE_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="HOO_ID" lazy="false" fetch="join" class="HOOK">
+      <column name="HOO_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <many-to-one name="SPA_ID" lazy="false" fetch="join" class="SPA">
+      <column name="SPA_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="CRA_NUM">
+      <column name="CRA_NUM" sql-type="VARCHAR2" not-null="true" unique="true" />
+    </property>
+    <property name="CRA_NAME">
+      <column name="CRA_NAME" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <many-to-one name="OBJECT_TYPE_ID" lazy="false" fetch="join" class="OBJECT_TYPE">
+      <column name="OBJECT_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="WALK_MIN_X">
+      <column name="WALK_MIN_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MAX_X">
+      <column name="WALK_MAX_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MIN_Y">
+      <column name="WALK_MIN_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MAX_Y">
+      <column name="WALK_MAX_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MIN_Z">
+      <column name="WALK_MIN_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALK_MAX_Z">
+      <column name="WALK_MAX_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_MAX_Z">
+      <column name="LITTLE_MAX_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LITTLE_MIN_Z">
+      <column name="LITTLE_MIN_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_SPEED_X">
+      <column name="MAX_SPEED_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_SPEED_Y">
+      <column name="MAX_SPEED_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_X">
+      <column name="ZERO_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_Y">
+      <column name="ZERO_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_Z">
+      <column name="ZERO_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SPECIFIC_WEIGHT">
+      <column name="SPECIFIC_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CRA_TYPE">
+      <column name="CRA_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="OBJ_ID">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_X_OOFSET">
+      <column name="ZERO_X_OOFSET" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_Y_OOFSET">
+      <column name="ZERO_Y_OOFSET" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_Z_OOFSET">
+      <column name="ZERO_Z_OOFSET" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_X_DIRECTION">
+      <column name="ZERO_X_DIRECTION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ANIMATION_AREA_CONFIGURATION_NUM">
+      <column name="ANIMATION_AREA_CONFIGURATION_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IP_ADDRESS">
+      <column name="IP_ADDRESS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ZERO_Y_DIRECTION">
+      <column name="ZERO_Y_DIRECTION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ZERO_Z_DIRECTION">
+      <column name="ZERO_Z_DIRECTION" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

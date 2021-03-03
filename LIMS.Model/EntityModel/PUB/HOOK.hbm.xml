@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HOOK" table="HOOK" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_HOOK_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="OBJ_TYPE_ID" lazy="false" fetch="join" class="OBJECT_TYPE">
+      <column name="OBJ_TYPE_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="NUM">
+      <column name="NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BASE_WEIGHT">
+      <column name="BASE_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LIMIT_WEIGHT">
+      <column name="LIMIT_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

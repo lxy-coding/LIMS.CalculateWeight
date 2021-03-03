@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HEAT_MATCH_LADLE" table="HEAT_MATCH_LADLE" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_HEAT_MATCH_LADLE_ID</param>
+      </generator>
+    </id>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_NUM">
+      <column name="BOF_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_REPAIR_ID">
+      <column name="HOT_REPAIR_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CHARGE_STATUS">
+      <column name="CHARGE_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOF_TAP_TIME">
+      <column name="BOF_TAP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

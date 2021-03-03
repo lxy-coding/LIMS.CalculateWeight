@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LOG" table="LOG" lazy="true" schema="SL" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="LOG_TYPE">
+      <column name="LOG_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LOG_CONTENT">
+      <column name="LOG_CONTENT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

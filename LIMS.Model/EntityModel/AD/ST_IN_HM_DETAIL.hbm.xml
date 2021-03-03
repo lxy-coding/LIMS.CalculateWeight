@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_IN_HM_DETAIL" table="ST_IN_HM_DETAIL" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="IRON_NUM">
+      <column name="IRON_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HM_ID">
+      <column name="HM_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="C">
+      <column name="C" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SI">
+      <column name="SI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MN">
+      <column name="MN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="P">
+      <column name="P" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="S">
+      <column name="S" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="C_AS">
+      <column name="C_AS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TI">
+      <column name="TI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ACCEPT_TIME">
+      <column name="ACCEPT_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_FLAG">
+      <column name="READ_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SLOT_CROSS_SPA" table="SLOT_CROSS_SPA" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="REFE_ID">
+      <column name="REFE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_NUM">
+      <column name="SLOT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CAR_NUM">
+      <column name="CAR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SPA_START">
+      <column name="SPA_START" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SPA_END">
+      <column name="SPA_END" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CRA_START">
+      <column name="CRA_START" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CRA_END">
+      <column name="CRA_END" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="TEAM">
+      <column name="TEAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SHIFT">
+      <column name="SHIFT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="USER_NAME">
+      <column name="USER_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

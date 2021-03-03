@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_HMI_CONFIG_INFO" table="CRANE_HMI_CONFIG_INFO" lazy="true" schema="PUB" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CRANE_HMI_CONFIG_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="SPA_ID">
+      <column name="SPA_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="CRANE_ID">
+      <column name="CRANE_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="DEV_X">
+      <column name="DEV_X" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="DEV_Y">
+      <column name="DEV_Y" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="DEV_Z">
+      <column name="DEV_Z" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="MAX_SPA_X">
+      <column name="MAX_SPA_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_SPA_Y">
+      <column name="MAX_SPA_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CANVAS_RECT_X">
+      <column name="CANVAS_RECT_X" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="CANVAS_RECT_Y">
+      <column name="CANVAS_RECT_Y" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="CONFIG_ID">
+      <column name="CONFIG_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

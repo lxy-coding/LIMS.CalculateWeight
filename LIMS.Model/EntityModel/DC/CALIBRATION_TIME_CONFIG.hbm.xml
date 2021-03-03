@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CALIBRATION_TIME_CONFIG" table="CALIBRATION_TIME_CONFIG" lazy="true" schema="DC" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CALIBRATION_TIME_CONFIG_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="CALIBRATION_TIME_DATA_POINT_ID" lazy="false" fetch="join" class="OPC_DATA_POINT">
+      <column name="CALIBRATION_TIME_DATA_POINT_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <many-to-one name="CALIBRATION_WRITE_SYMBOL_DATA_POINT_ID" lazy="false" fetch="join" class="OPC_DATA_POINT">
+      <column name="CALIBRATION_WRITE_SYMBOL_DATA_POINT_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="ENABLE">
+      <column name="ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CRA_ID">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

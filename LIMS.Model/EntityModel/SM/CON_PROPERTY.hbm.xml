@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CON_PROPERTY" table="CON_PROPERTY" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CON_PROPERTY_ID</param>
+      </generator>
+    </id>
+    <property name="NUM">
+      <column name="NUM" sql-type="VARCHAR2" not-null="false" unique="true" />
+    </property>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXTERNAL_DIAM">
+      <column name="EXTERNAL_DIAM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="INTERNAL_DIAM">
+      <column name="INTERNAL_DIAM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEIGHT">
+      <column name="HEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LENGTH">
+      <column name="LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WIDTH">
+      <column name="WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RATE_WEIGHT">
+      <column name="RATE_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MAX_WEIGHT">
+      <column name="MAX_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISPLAYNAME">
+      <column name="DISPLAYNAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

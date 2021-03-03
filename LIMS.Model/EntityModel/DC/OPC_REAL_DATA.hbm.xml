@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="OPC_REAL_DATA" table="OPC_REAL_DATA" lazy="true" schema="DC" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_OPC_REAL_DATA_ID</param>
+      </generator>
+    </id>
+    <property name="DATA_POINT_ID">
+      <column name="DATA_POINT_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="VALUE">
+      <column name="VALUE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="QUALITY">
+      <column name="QUALITY" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STAMP">
+      <column name="STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATED">
+      <column name="UPDATED" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

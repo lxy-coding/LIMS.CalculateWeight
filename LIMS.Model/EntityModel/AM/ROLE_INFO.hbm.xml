@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ROLE_INFO" table="ROLE_INFO" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_ROLE_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="ROLE_NUM">
+      <column name="ROLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ROLE_NAM">
+      <column name="ROLE_NAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_USER_NUM">
+      <column name="CREATE_USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENABLE_FLAG">
+      <column name="ENABLE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

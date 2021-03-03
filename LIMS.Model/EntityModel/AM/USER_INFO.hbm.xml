@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="USER_INFO" table="USER_INFO" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_USER_INFO_ID</param>
+      </generator>
+    </id>
+    <many-to-one name="TEA_ID" lazy="false" fetch="join" class="TEAM_INFO">
+      <column name="TEA_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="SELECTED">
+      <column name="SELECTED" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NAM">
+      <column name="NAM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PWD">
+      <column name="PWD" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="USER_TYPE">
+      <column name="USER_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="P_USER_NUM">
+      <column name="P_USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IN_JOB">
+      <column name="IN_JOB" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="ENABLE_FLAG">
+      <column name="ENABLE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="USER_HOME_PAGE">
+      <column name="USER_HOME_PAGE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="USER_QUICK_RECOURCES">
+      <column name="USER_QUICK_RECOURCES" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NUM">
+      <column name="NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

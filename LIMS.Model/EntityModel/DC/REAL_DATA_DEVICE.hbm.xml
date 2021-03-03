@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="REAL_DATA_DEVICE" table="REAL_DATA_DEVICE" lazy="true" schema="DC" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_REAL_DATA_DEVICE_ID</param>
+      </generator>
+    </id>
+    <property name="TABLE_NAME">
+      <column name="TABLE_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PRIMARY_KEY_FIELD_NAME">
+      <column name="PRIMARY_KEY_FIELD_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PRIMARY_KEY_ID">
+      <column name="PRIMARY_KEY_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENABLE">
+      <column name="ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RAMARK">
+      <column name="RAMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TABLE_USERS">
+      <column name="TABLE_USERS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

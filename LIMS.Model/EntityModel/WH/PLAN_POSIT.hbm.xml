@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="PLAN_POSIT" table="PLAN_POSIT" lazy="true" schema="WH" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="PLA_ID">
+      <column name="PLA_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PARENT_ID">
+      <column name="PARENT_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="AREA_ID">
+      <column name="AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_ID">
+      <column name="POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LAYER">
+      <column name="LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_COUNT">
+      <column name="STEEL_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

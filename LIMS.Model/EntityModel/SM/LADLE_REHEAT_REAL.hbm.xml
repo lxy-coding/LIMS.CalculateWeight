@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_REHEAT_REAL" table="LADLE_REHEAT_REAL" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_REHEAT_REAL_ID</param>
+      </generator>
+    </id>
+    <property name="BURNER_NUM">
+      <column name="BURNER_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="COOL_REPAIR_NUM">
+      <column name="COOL_REPAIR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_REPAIR_NUM">
+      <column name="HOT_REPAIR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REHEAT_NUM">
+      <column name="REHEAT_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="LADLE_TYPE">
+      <column name="LADLE_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="MAINTAIN_TYPE">
+      <column name="MAINTAIN_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="TOTAL_LADLE_LIFE">
+      <column name="TOTAL_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CURRENT_LADLE_LIFE">
+      <column name="CURRENT_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REHEAT_STATUS">
+      <column name="REHEAT_STATUS" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="REHEAT_SYMBOL">
+      <column name="REHEAT_SYMBOL" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="REHEAT_START_TIME">
+      <column name="REHEAT_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REHEAT_DURATION">
+      <column name="REHEAT_DURATION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SOFT_DURATION">
+      <column name="SOFT_DURATION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MEDIUM_DURATION">
+      <column name="MEDIUM_DURATION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RAG_DURATION">
+      <column name="RAG_DURATION" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="GAS_PRESSURE">
+      <column name="GAS_PRESSURE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="GAS_FLUX">
+      <column name="GAS_FLUX" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="EDIT_TIME">
+      <column name="EDIT_TIME" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="END_TIME">
+      <column name="END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REMARK">
+      <column name="REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="A6AM10" table="A6AM10" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ST_NO">
+      <column name="ST_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ST_NO_DESC">
+      <column name="ST_NO_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="VALID_FLAG">
+      <column name="VALID_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MSC_LINE_NO">
+      <column name="MSC_LINE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEFAULT_FLAG">
+      <column name="DEFAULT_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOLD_FLAG">
+      <column name="HOLD_FLAG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="WHOLE_BACKLOG">
+      <column name="WHOLE_BACKLOG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="WHOLE_BACKLOG_SEQ">
+      <column name="WHOLE_BACKLOG_SEQ" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="WHOLE_BACKLOG_CODE">
+      <column name="WHOLE_BACKLOG_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="WHOLE_BACKLOG_NAME">
+      <column name="WHOLE_BACKLOG_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_WT_MIN">
+      <column name="SCRAP_WT_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_WT_MAX">
+      <column name="SCRAP_WT_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TL_RATE_MIN">
+      <column name="TL_RATE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TL_RATE_MAX">
+      <column name="TL_RATE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZG_RATE_MIN">
+      <column name="ZG_RATE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ZG_RATE_MAX">
+      <column name="ZG_RATE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PTST_RATE_MIN">
+      <column name="PTST_RATE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PTST_RATE_MAX">
+      <column name="PTST_RATE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FG1_RATE_MIN">
+      <column name="FG1_RATE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FG1_RATE_MAX">
+      <column name="FG1_RATE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FG2_RATE_MIN">
+      <column name="FG2_RATE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FG2_RATE_MAX">
+      <column name="FG2_RATE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DNST_RATE_MIN">
+      <column name="DNST_RATE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DNST_RATE_MAX">
+      <column name="DNST_RATE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_IRON_WT_MIN">
+      <column name="BOF_IRON_WT_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_IRON_WT_MAX">
+      <column name="BOF_IRON_WT_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_TEMP_MIN">
+      <column name="IRON_TEMP_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_TEMP_MAX">
+      <column name="IRON_TEMP_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SI_MIN">
+      <column name="SI_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SI_MAX">
+      <column name="SI_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MN_MIN">
+      <column name="MN_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MN_MAX">
+      <column name="MN_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="P_MAX_FE">
+      <column name="P_MAX_FE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="S_MAX">
+      <column name="S_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="AS_MAX">
+      <column name="AS_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NI_MAX">
+      <column name="NI_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CR_MAX">
+      <column name="CR_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CU_MAX">
+      <column name="CU_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MO_MAX">
+      <column name="MO_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="B_MAX">
+      <column name="B_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TI_MAX">
+      <column name="TI_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BT_BLOW_CODE">
+      <column name="BT_BLOW_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BT_BLOW_DESC">
+      <column name="BT_BLOW_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_DEO_ALLOY_CODE">
+      <column name="BOF_DEO_ALLOY_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_ALLOY_CODE">
+      <column name="BOF_ALLOY_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_SLAG_MODE_CODE">
+      <column name="BOF_SLAG_MODE_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_SLAG_MODE_DESC">
+      <column name="BOF_SLAG_MODE_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_SLAG_TYPE_CODE">
+      <column name="BOF_SLAG_TYPE_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_SLAG_TYPE_DESC">
+      <column name="BOF_SLAG_TYPE_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MGO_MIN">
+      <column name="MGO_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MGO_MAX">
+      <column name="MGO_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="R_MIN">
+      <column name="R_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="R_MAX">
+      <column name="R_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C_MIN">
+      <column name="C_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="C_MAX">
+      <column name="C_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="P_MIN">
+      <column name="P_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="P_MAX">
+      <column name="P_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_AL_MIN">
+      <column name="DEO_AL_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_AL_MAX">
+      <column name="DEO_AL_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_SICABA_MIN">
+      <column name="DEO_SICABA_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_SICABA_MAX">
+      <column name="DEO_SICABA_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_SIALCABA_MIN">
+      <column name="DEO_SIALCABA_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_SIALCABA_MAX">
+      <column name="DEO_SIALCABA_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_SIC_MIN">
+      <column name="DEO_SIC_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEO_SIC_MAX">
+      <column name="DEO_SIC_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LIME_MIN">
+      <column name="LIME_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LIME_MAX">
+      <column name="LIME_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="INT_SLAG_MIN">
+      <column name="INT_SLAG_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="INT_SLAG_MAX">
+      <column name="INT_SLAG_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FLUORITE_MIN">
+      <column name="FLUORITE_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FLUORITE_MAX">
+      <column name="FLUORITE_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="JL_SLAG_MIN">
+      <column name="JL_SLAG_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="JL_SLAG_MAX">
+      <column name="JL_SLAG_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GZJ_MIN">
+      <column name="GZJ_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GZJ_MAX">
+      <column name="GZJ_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DGN_MIN">
+      <column name="DGN_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DGN_MAX">
+      <column name="DGN_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SILICON_SAND_MIN">
+      <column name="SILICON_SAND_MIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SILICON_SAND_MAX">
+      <column name="SILICON_SAND_MAX" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LD_TYPE">
+      <column name="LD_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LD_TYPE_DESC">
+      <column name="LD_TYPE_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LD_STATE">
+      <column name="LD_STATE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LD_STATE_DESC">
+      <column name="LD_STATE_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LD_MATERIAL">
+      <column name="LD_MATERIAL" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LD_MATERIAL_DESC">
+      <column name="LD_MATERIAL_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REC_CREATOR">
+      <column name="REC_CREATOR" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REC_CREATE_TIME">
+      <column name="REC_CREATE_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REC_REVISOR">
+      <column name="REC_REVISOR" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REC_REVISE_TIME">
+      <column name="REC_REVISE_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_1">
+      <column name="BACK_CODE_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_2">
+      <column name="BACK_CODE_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_3">
+      <column name="BACK_CODE_3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_4">
+      <column name="BACK_CODE_4" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_5">
+      <column name="BACK_CODE_5" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_6">
+      <column name="BACK_CODE_6" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_7">
+      <column name="BACK_CODE_7" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_8">
+      <column name="BACK_CODE_8" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_9">
+      <column name="BACK_CODE_9" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACK_CODE_10">
+      <column name="BACK_CODE_10" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="UINAME" table="UINAME" lazy="true" schema="AM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_UINAME_ID</param>
+      </generator>
+    </id>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SYSTEMNAME">
+      <column name="SYSTEMNAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="COMPANY">
+      <column name="COMPANY" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ICON">
+      <column name="ICON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="EDITION">
+      <column name="EDITION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ENABLE_FLAG">
+      <column name="ENABLE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

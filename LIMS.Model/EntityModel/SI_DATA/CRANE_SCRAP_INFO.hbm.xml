@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_SCRAP_INFO" table="CRANE_SCRAP_INFO" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HOPPER_NO">
+      <column name="HOPPER_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_COUNT">
+      <column name="MAT_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET1">
+      <column name="MATWET1" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET2">
+      <column name="MATWET2" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET3">
+      <column name="MATWET3" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET4">
+      <column name="MATWET4" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET5">
+      <column name="MATWET5" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET6">
+      <column name="MATWET6" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET7">
+      <column name="MATWET7" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET8">
+      <column name="MATWET8" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET9">
+      <column name="MATWET9" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATWET10">
+      <column name="MATWET10" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_WGT">
+      <column name="SCRAP_WGT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_LOAD_START_TIME">
+      <column name="SCRAP_LOAD_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_LOAD_END_TIME">
+      <column name="SCRAP_LOAD_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFE_ID">
+      <column name="REFE_ID" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

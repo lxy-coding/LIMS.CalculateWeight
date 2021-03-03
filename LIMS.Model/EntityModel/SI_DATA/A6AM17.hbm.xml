@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="A6AM17" table="A6AM17" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="INPUT_PLAN">
+      <column name="INPUT_PLAN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_NO">
+      <column name="MAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_TYPE">
+      <column name="MAT_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IN_TYPE">
+      <column name="IN_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SOU_POS">
+      <column name="SOU_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DES_POS">
+      <column name="DES_POS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BACKUP">
+      <column name="BACKUP" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="POLYNOMIAL_COEFF" table="POLYNOMIAL_COEFF" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_POLYNOMIAL_COEFF_ID</param>
+      </generator>
+    </id>
+    <property name="MATERIAL_NUM">
+      <column name="MATERIAL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PROPERTY">
+      <column name="PROPERTY" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POWER0">
+      <column name="POWER0" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POWER1">
+      <column name="POWER1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POWER2">
+      <column name="POWER2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POWER3">
+      <column name="POWER3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

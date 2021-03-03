@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WH_STACKER_ORDER_REC" table="WH_STACKER_ORDER_REC" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="PLAN_GUID">
+      <column name="PLAN_GUID" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="POSITION_ID">
+      <column name="POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SPA_ID">
+      <column name="SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLAB_NUM">
+      <column name="SLAB_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="RECOMMEND_SEQ">
+      <column name="RECOMMEND_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCORE">
+      <column name="SCORE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_STATUS">
+      <column name="SELECT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_STATUS">
+      <column name="EXECUTE_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAIL_REASON">
+      <column name="FAIL_REASON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

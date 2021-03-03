@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_PLAN_INFO" table="CRANE_PLAN_INFO" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="CRA_ID">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_STATUS">
+      <column name="PLAN_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>   
+    <property name="CON_NUM">
+      <column name="CON_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="START_POSIT">
+      <column name="START_POSIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="START_TIME">
+      <column name="START_TIME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="END_POSIT">
+      <column name="END_POSIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="END_TIME">
+      <column name="END_TIME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

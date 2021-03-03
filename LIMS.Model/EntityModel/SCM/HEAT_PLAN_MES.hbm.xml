@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HEAT_PLAN_MES" table="HEAT_PLAN_MES" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="EVENT_CODE">
+      <column name="EVENT_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="EVENT_TIME">
+      <column name="EVENT_TIME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSITION_IN_LINE">
+      <column name="POSITION_IN_LINE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_PLANID">
+      <column name="HEAT_PLANID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_ID">
+      <column name="HEAT_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="EQUIP_ID">
+      <column name="EQUIP_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_TYPE">
+      <column name="PLAN_TYPE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GRADE_ID">
+      <column name="GRADE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CASTSEQ_ID">
+      <column name="CASTSEQ_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WEIGHT_AIM">
+      <column name="WEIGHT_AIM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NOTE_TEXT">
+      <column name="NOTE_TEXT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

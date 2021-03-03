@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LIMSI_RAPIDANALYS_MAIN" table="LIMSI_RAPIDANALYS_MAIN" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ID">
+      <column name="ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SAMPLE_ID">
+      <column name="SAMPLE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_SPEC">
+      <column name="SAMPLE_SPEC" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_TAKEN_TIME">
+      <column name="SAMPLE_TAKEN_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SAMPLE_MS">
+      <column name="SAMPLE_MS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_CODE">
+      <column name="STEEL_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ANALYSIS_END_TIME">
+      <column name="ANALYSIS_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PONO">
+      <column name="PONO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ST_SAMPLE_DIV">
+      <column name="ST_SAMPLE_DIV" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_NO">
+      <column name="IRON_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REP_SAMPLE_FLAG">
+      <column name="REP_SAMPLE_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SAMPLE_OF_TIMES">
+      <column name="SAMPLE_OF_TIMES" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLEID">
+      <column name="LADLEID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ORDER_IN_CODE">
+      <column name="ORDER_IN_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ORDER_TYPE_CODE">
+      <column name="ORDER_TYPE_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMP_SITE_CODE">
+      <column name="SAMP_SITE_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_TYPE_CODE">
+      <column name="MAT_TYPE_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MAT_CODE">
+      <column name="MAT_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_STATE">
+      <column name="SAMPLE_STATE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PROCESSINSTID">
+      <column name="PROCESSINSTID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="COM_TYPE">
+      <column name="COM_TYPE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="COM_PERSON">
+      <column name="COM_PERSON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ACCEPT_TIME">
+      <column name="ACCEPT_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="ENTR_TIME">
+      <column name="ENTR_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="ENTR_DEP_NAME">
+      <column name="ENTR_DEP_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_ID">
+      <column name="HEAT_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_GRADE_ID">
+      <column name="STEEL_GRADE_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="INNER_STG_ID">
+      <column name="INNER_STG_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_PLACE">
+      <column name="SAMPLE_PLACE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_NUMBER">
+      <column name="SAMPLE_NUMBER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_START_TIME">
+      <column name="SAMPLE_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SAMPLE_RELEASE_TIME">
+      <column name="SAMPLE_RELEASE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DESUL_TREATMENT_ID">
+      <column name="DESUL_TREATMENT_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PREP_EQU_ID">
+      <column name="PREP_EQU_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ANALYZER_ID">
+      <column name="ANALYZER_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CLASS_ID">
+      <column name="CLASS_ID" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="GROUP_ID">
+      <column name="GROUP_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OPERATOR_ID">
+      <column name="OPERATOR_ID" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="SAMPLE_TYPE">
+      <column name="SAMPLE_TYPE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CREATE_DATE">
+      <column name="CREATE_DATE" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CREATE_USER">
+      <column name="CREATE_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="UPDATE_DATE">
+      <column name="UPDATE_DATE" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_USER">
+      <column name="UPDATE_USER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="YL_TEC_ROUTE">
+      <column name="YL_TEC_ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STATE">
+      <column name="STATE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DEVICES">
+      <column name="DEVICES" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REQ_DATE">
+      <column name="REQ_DATE" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="INSPECTION_STANDARD">
+      <column name="INSPECTION_STANDARD" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="INSPECTIONG_STANDARD_NAME">
+      <column name="INSPECTIONG_STANDARD_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TEST_RESULT">
+      <column name="TEST_RESULT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STATE_WAIT">
+      <column name="STATE_WAIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BAD_SAMPLE">
+      <column name="BAD_SAMPLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TQ_STATE">
+      <column name="TQ_STATE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ABOLISH_REASON">
+      <column name="ABOLISH_REASON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLE_HOLDER">
+      <column name="SAMPLE_HOLDER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SAMPLING_TIME">
+      <column name="SAMPLING_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="ANALYSIS_METHOD">
+      <column name="ANALYSIS_METHOD" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FEEDBACK_LIMIT">
+      <column name="FEEDBACK_LIMIT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TEST_METHOD">
+      <column name="TEST_METHOD" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ACCEPT_PERSON">
+      <column name="ACCEPT_PERSON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ACT_TPC_NO">
+      <column name="ACT_TPC_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TPC_NO">
+      <column name="TPC_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="UP_PERSON">
+      <column name="UP_PERSON" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="UP_DATE">
+      <column name="UP_DATE" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SLAB_NO">
+      <column name="SLAB_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STATE_AAA601">
+      <column name="STATE_AAA601" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="STATE_AAA602">
+      <column name="STATE_AAA602" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="STATE_AAA603">
+      <column name="STATE_AAA603" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="STATE_AAA604">
+      <column name="STATE_AAA604" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="OP_FLAG_AAA601">
+      <column name="OP_FLAG_AAA601" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="OP_FLAG_AAA602">
+      <column name="OP_FLAG_AAA602" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="OP_FLAG_AAA603">
+      <column name="OP_FLAG_AAA603" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="OP_FLAG_AAA604">
+      <column name="OP_FLAG_AAA604" sql-type="CHAR" not-null="false" />
+    </property>
+    <property name="SMALL_UP_TIME">
+      <column name="SMALL_UP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SMALL_SAMPLE_TIME">
+      <column name="SMALL_SAMPLE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SMALL_PREPSTART_TIME">
+      <column name="SMALL_PREPSTART_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SMALL_PREPEND_TIME">
+      <column name="SMALL_PREPEND_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SMALL_PREP_TIME">
+      <column name="SMALL_PREP_TIME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SMALL_ANA_TIME">
+      <column name="SMALL_ANA_TIME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SMALL_STATION_ID">
+      <column name="SMALL_STATION_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SMALL_AUDITOR">
+      <column name="SMALL_AUDITOR" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SMALL_ANAPROG_NAME">
+      <column name="SMALL_ANAPROG_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

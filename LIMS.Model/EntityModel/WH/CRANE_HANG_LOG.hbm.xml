@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_HANG_LOG" table="CRANE_HANG_LOG" lazy="true" schema="WH" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <many-to-one name="POS_ID" lazy="false" fetch="join" class="POSITION">
+      <column name="POS_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="CRA_ID">
+      <column name="CRA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_NUM">
+      <column name="STEEL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_COUNT">
+      <column name="STEEL_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_AREA_ID">
+      <column name="UP_AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_POSITION_ID">
+      <column name="UP_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_LAYER">
+      <column name="UP_LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_X">
+      <column name="UP_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_Y">
+      <column name="UP_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_Z">
+      <column name="UP_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_ROTATE">
+      <column name="UP_ROTATE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="UP_TIME">
+      <column name="UP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UP_ORDER">
+      <column name="UP_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_AREA_ID">
+      <column name="DOWN_AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_POSITION_ID">
+      <column name="DOWN_POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_LAYER">
+      <column name="DOWN_LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_X">
+      <column name="DOWN_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_Y">
+      <column name="DOWN_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_Z">
+      <column name="DOWN_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_ROTATE">
+      <column name="DOWN_ROTATE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_TIME">
+      <column name="DOWN_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="DOWN_ORDER">
+      <column name="DOWN_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DO_FLAG">
+      <column name="DO_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BUSINESS_TYPE">
+      <column name="BUSINESS_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_WEIGHT">
+      <column name="STEEL_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_CATEGORY">
+      <column name="STEEL_CATEGORY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="USER_NUM">
+      <column name="USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CLASS_ID">
+      <column name="CLASS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="UP_LAYER_ORDER">
+      <column name="UP_LAYER_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DOWN_LAYER_ORDER">
+      <column name="DOWN_LAYER_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

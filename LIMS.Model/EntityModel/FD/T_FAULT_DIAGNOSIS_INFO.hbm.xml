@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="T_FAULT_DIAGNOSIS_INFO" table="T_FAULT_DIAGNOSIS_INFO" lazy="true" schema="FD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_T_FAULT_DIAGNOSIS_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="FAULT_CODE">
+      <column name="FAULT_CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FAULT_DESCRIBE">
+      <column name="FAULT_DESCRIBE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FAULT_START_TIME">
+      <column name="FAULT_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FAULT_END_TIME">
+      <column name="FAULT_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FAULT_FLAG">
+      <column name="FAULT_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="PROCESS_NAME">
+      <column name="PROCESS_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PROCESS_TIME">
+      <column name="PROCESS_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

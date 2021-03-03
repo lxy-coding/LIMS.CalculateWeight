@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="EXCHANGE_BUFFER_L2_TCWL" table="EXCHANGE_BUFFER_L2_TCWL" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_EXCHANGE_BUFFER_L2_TCWL_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TABLE_NAME">
+      <column name="TABLE_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DATA_ID">
+      <column name="DATA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="INSERT_SOURCE">
+      <column name="INSERT_SOURCE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LEVEL2_MSG_STATUS">
+      <column name="LEVEL2_MSG_STATUS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LEVEL2_UPDATE_TIME">
+      <column name="LEVEL2_UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="LEVEL3_MSG_STATUS">
+      <column name="LEVEL3_MSG_STATUS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LEVEL3_UPDATE_TIME">
+      <column name="LEVEL3_UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="DES_HEAT_RECORD" table="DES_HEAT_RECORD" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <many-to-one name="DES_ID" lazy="false" fetch="join" class="DES_PROPERTY">
+      <column name="DES_ID" sql-type="NUMBER" not-null="false" />
+    </many-to-one>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DEAL_NUM">
+      <column name="DEAL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HML_NUM">
+      <column name="HML_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_STATUS">
+      <column name="HEAT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STEEL_GRADE">
+      <column name="STEEL_GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_ROUTE">
+      <column name="HEAT_ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SMELT_POSIT">
+      <column name="SMELT_POSIT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HML_CTEMP">
+      <column name="HML_CTEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HML_COMP">
+      <column name="HML_COMP" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PROCESS_BEGIN">
+      <column name="PROCESS_BEGIN" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REMAIN_DURAT">
+      <column name="REMAIN_DURAT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_BATCH_NO">
+      <column name="HEAT_BATCH_NO" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="VEHICLE_DISCRIMINATE_RECORD" table="VEHICLE_DISCRIMINATE_RECORD" lazy="true" schema="PN" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_VEHICLE_DISCRIMINATE_RECORD_ID</param>
+      </generator>
+    </id>
+    <property name="CAMERA_NUM">
+      <column name="CAMERA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISCRIMINATE_RESULT">
+      <column name="DISCRIMINATE_RESULT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ACCURACY">
+      <column name="ACCURACY" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISCRIMINATE_IMAGE">
+      <column name="DISCRIMINATE_IMAGE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WST_NUM">
+      <column name="WST_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TRACKING_RESULT">
+      <column name="TRACKING_RESULT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="RECTIFY_RESULT">
+      <column name="RECTIFY_RESULT" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

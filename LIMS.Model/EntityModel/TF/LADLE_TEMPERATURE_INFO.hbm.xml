@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_TEMPERATURE_INFO" table="LADLE_TEMPERATURE_INFO" lazy="true" schema="TF" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_TEMPERATURE_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="OBJ_ID">
+      <column name="OBJ_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="NET_WEIGHT">
+      <column name="NET_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LAYER_THICK">
+      <column name="LAYER_THICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_EX_TEMP">
+      <column name="BOTTOM_EX_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_IN_TEMP">
+      <column name="BOTTOM_IN_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_EX_TEMP">
+      <column name="WALL_EX_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_IN_TEMP">
+      <column name="WALL_IN_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

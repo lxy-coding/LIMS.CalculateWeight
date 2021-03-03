@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SCRAP_TYPE" table="SCRAP_TYPE" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_SCRAP_TYPE_ID</param>
+      </generator>
+    </id>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CODE">
+      <column name="CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SPECIFICATION">
+      <column name="SPECIFICATION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="P_ID">
+      <column name="P_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SCRAP_LEVEL">
+      <column name="SCRAP_LEVEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_USE">
+      <column name="IS_USE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

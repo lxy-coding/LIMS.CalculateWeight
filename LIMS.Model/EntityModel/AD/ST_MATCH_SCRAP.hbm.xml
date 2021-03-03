@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_MATCH_SCRAP" table="ST_MATCH_SCRAP" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <many-to-one name="HEAT_ID" lazy="false" fetch="join" class="ST_HEAT_PLAN">
+      <column name="HEAT_ID" sql-type="VARCHAR2" not-null="false" />
+    </many-to-one>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TOTAL_WEIGHT">
+      <column name="TOTAL_WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_NUM">
+      <column name="SCRAP_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MATCH_SERIAL_NUM">
+      <column name="MATCH_SERIAL_NUM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SCRAP_FROM">
+      <column name="SCRAP_FROM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EVENT_FLAG">
+      <column name="EVENT_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MODIFY_TIME">
+      <column name="MODIFY_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CHARGE_START_TIME">
+      <column name="CHARGE_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CHARGE_END_TIME">
+      <column name="CHARGE_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="EXECUTE_SEQ">
+      <column name="EXECUTE_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_LAST_PLAN">
+      <column name="IS_LAST_PLAN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MODIFY_STATUS">
+      <column name="MODIFY_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <bag name="ST_MATCH_SCRAP_DETAIL" lazy="false">
+      <key column="MATCH_ID" />
+      <one-to-many class="ST_MATCH_SCRAP_DETAIL" />
+    </bag>
+  </class>
+</hibernate-mapping>

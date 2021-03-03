@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="A6AM01" table="A6AM01" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_LOT_NO">
+      <column name="CAST_LOT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="SM_PLAN_NO">
+      <column name="SM_PLAN_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PONO">
+      <column name="PONO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ST_NO">
+      <column name="ST_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_LOT_SUM">
+      <column name="CAST_LOT_SUM" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CAST_LOT_DIV_NO">
+      <column name="CAST_LOT_DIV_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CC_MACH_NO">
+      <column name="CC_MACH_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CC_TYPE">
+      <column name="CC_TYPE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_ROUTE_CODE">
+      <column name="REFINE_ROUTE_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_NUM">
+      <column name="REFINE_NUM" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_TAP_WT">
+      <column name="PLAN_TAP_WT" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FURNACE_NO">
+      <column name="FURNACE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TD_CHG_FLG">
+      <column name="TD_CHG_FLG" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="MAKING_METHOD_CM">
+      <column name="MAKING_METHOD_CM" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DP_BOF_NO_CM">
+      <column name="DP_BOF_NO_CM" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DP_BOF_START_TIME">
+      <column name="DP_BOF_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DP_BLOW_START_TIME">
+      <column name="DP_BLOW_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DP_BLOW_END_TIME">
+      <column name="DP_BLOW_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DP_TAP_START_TIME">
+      <column name="DP_TAP_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DP_TAP_END_TIME">
+      <column name="DP_TAP_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BOF_START_CHR_TIME">
+      <column name="BOF_START_CHR_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BLOW_START_TIME">
+      <column name="BLOW_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="BLOW_END_TIME">
+      <column name="BLOW_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TAP_START_TIME">
+      <column name="TAP_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="TAP_END_TIME">
+      <column name="TAP_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="AR_DEV_CODE">
+      <column name="AR_DEV_CODE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="AR_BLOW_START_TIME">
+      <column name="AR_BLOW_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="AR_BLOW_END_TIME">
+      <column name="AR_BLOW_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_DEV_CODE_1">
+      <column name="REFINE_DEV_CODE_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_START_TIME_1">
+      <column name="REFINE_START_TIME_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_END_TIME_1">
+      <column name="REFINE_END_TIME_1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_DEV_CODE_2">
+      <column name="REFINE_DEV_CODE_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_START_TIME_2">
+      <column name="REFINE_START_TIME_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_END_TIME_2">
+      <column name="REFINE_END_TIME_2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_DEV_CODE_3">
+      <column name="REFINE_DEV_CODE_3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_START_TIME_3">
+      <column name="REFINE_START_TIME_3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_END_TIME_3">
+      <column name="REFINE_END_TIME_3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_DEV_CODE_4">
+      <column name="REFINE_DEV_CODE_4" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_START_TIME_4">
+      <column name="REFINE_START_TIME_4" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="REFINE_END_TIME_4">
+      <column name="REFINE_END_TIME_4" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CC_REQ_TIME">
+      <column name="CC_REQ_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_TIME_BEGIN">
+      <column name="POUR_TIME_BEGIN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="POUR_TIME_END">
+      <column name="POUR_TIME_END" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_KILL_TIME_PRE_ARR">
+      <column name="LADLE_KILL_TIME_PRE_ARR" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="STOP_MARK">
+      <column name="STOP_MARK" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_HEAT_NO">
+      <column name="PLAN_HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ST_NO_DESC">
+      <column name="ST_NO_DESC" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

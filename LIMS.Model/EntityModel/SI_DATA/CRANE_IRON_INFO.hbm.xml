@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CRANE_IRON_INFO" table="CRANE_IRON_INFO" lazy="true" schema="SI_DATA" >
+    <id name="MSG_COUNTER" column="MSG_COUNTER">
+      <generator class="sequence">
+        <param name="sequence">S_MSG_COUNTER_ID</param>
+      </generator>
+    </id>
+    <property name="MSG_TIME">
+      <column name="MSG_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="READ_TIME">
+      <column name="READ_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MSG_STATUS">
+      <column name="MSG_STATUS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="OP_DIV">
+      <column name="OP_DIV" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="GL_NO">
+      <column name="GL_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROC_NO">
+      <column name="PROC_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_NO">
+      <column name="IRON_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_LADLE_NO">
+      <column name="IRON_LADLE_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NO">
+      <column name="HEAT_NO" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="NET_WT">
+      <column name="NET_WT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IRON_TEMP">
+      <column name="IRON_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ANALYSIZE_TIME">
+      <column name="ANALYSIZE_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CF_C">
+      <column name="CF_C" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CF_SI">
+      <column name="CF_SI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CF_MN">
+      <column name="CF_MN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CF_P">
+      <column name="CF_P" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CF_S">
+      <column name="CF_S" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CF_TI">
+      <column name="CF_TI" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CF_AS">
+      <column name="CF_AS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="MOLTENIRON_SOURCE">
+      <column name="MOLTENIRON_SOURCE" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_LOAD_START_TIME">
+      <column name="IRON_LOAD_START_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IRON_LOAD_END_TIME">
+      <column name="IRON_LOAD_END_TIME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DEL_ID">
+      <column name="DEL_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

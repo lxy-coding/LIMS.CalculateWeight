@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="INTERFACE_INFO" table="INTERFACE_INFO" lazy="true" schema="SI" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_INTERFACE_INFO_ID</param>
+      </generator>
+    </id>
+  </class>
+</hibernate-mapping>

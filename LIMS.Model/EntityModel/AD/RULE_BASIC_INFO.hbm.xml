@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="RULE_BASIC_INFO" table="RULE_BASIC_INFO" lazy="true" schema="AD" >
+    <id name="RULE_ID" column="RULE_ID">
+      <generator class="sequence">
+        <param name="sequence">S_RULE_BASIC_INFO_ID</param>
+      </generator>
+    </id>
+    <property name="RULE_TYPE">
+      <column name="RULE_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="PRIORITY_ID_GATHER">
+      <column name="PRIORITY_ID_GATHER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="RULE_NAME">
+      <column name="RULE_NAME" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="RULE_CLASS">
+      <column name="RULE_CLASS" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="RULE_ANNOTATION">
+      <column name="RULE_ANNOTATION" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="PROCESS_TYPE">
+      <column name="PROCESS_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <bag name="PLAN_MAP" lazy="false">
+      <key column="RULE_ID" />
+      <one-to-many class="PLAN_MAP" />
+    </bag>
+  </class>
+</hibernate-mapping>

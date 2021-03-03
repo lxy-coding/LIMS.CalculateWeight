@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="HOTMETALINANDOUT" table="HOTMETALINANDOUT" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="IRONLINE">
+      <column name="IRONLINE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IRONCONNUM">
+      <column name="IRONCONNUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HANDLEUSER">
+      <column name="HANDLEUSER" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WSTNUM">
+      <column name="WSTNUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IRONTYPE">
+      <column name="IRONTYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RECORDINGTIME">
+      <column name="RECORDINGTIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="ISSTATE">
+      <column name="ISSTATE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ENTERTIME">
+      <column name="ENTERTIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="OUTTIME">
+      <column name="OUTTIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="IRONTIMESNUM">
+      <column name="IRONTIMESNUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="REMARKS">
+      <column name="REMARKS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

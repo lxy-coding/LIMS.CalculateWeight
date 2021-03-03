@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_ASSEMBLE_RECORD" table="LADLE_ASSEMBLE_RECORD" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="COOL_REPAIR_NUM">
+      <column name="COOL_REPAIR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HOT_REPAIR_NUM">
+      <column name="HOT_REPAIR_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="LADLE_TYPE">
+      <column name="LADLE_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="MAINTAIN_TYPE">
+      <column name="MAINTAIN_TYPE" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="RECOM_LADLE_LIFE">
+      <column name="RECOM_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RECOM_CAPACITY">
+      <column name="RECOM_CAPACITY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TOTAL_LADLE_LIFE">
+      <column name="TOTAL_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CURRENT_LADLE_LIFE">
+      <column name="CURRENT_LADLE_LIFE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TOTAL_CAPACITY">
+      <column name="TOTAL_CAPACITY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CURRENT_CAPACITY">
+      <column name="CURRENT_CAPACITY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ASSEMBLE_TYPE">
+      <column name="ASSEMBLE_TYPE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="ASSEMBLE_MATERIAL_MANU">
+      <column name="ASSEMBLE_MATERIAL_MANU" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LEFT_POROUS_MANU">
+      <column name="LEFT_POROUS_MANU" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RIGHT_POROUS_MANU">
+      <column name="RIGHT_POROUS_MANU" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LEFT_POROUS_NUM">
+      <column name="LEFT_POROUS_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="RIGHT_POROUS_NUM">
+      <column name="RIGHT_POROUS_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_TO_TOP_HEIGHT">
+      <column name="BOTTOM_TO_TOP_HEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_UPPER_DIAM">
+      <column name="WALL_UPPER_DIAM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_MEDIUM_DIAM">
+      <column name="WALL_MEDIUM_DIAM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_DOWN_DIAM">
+      <column name="WALL_DOWN_DIAM" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_CHANGE">
+      <column name="WALL_PERMANENT_CHANGE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_CHANGE">
+      <column name="BOTTOM_PERMANENT_CHANGE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EDGE_REMAIN_LAYER_COUNT">
+      <column name="EDGE_REMAIN_LAYER_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SLAG_CHANGE_LAYER_COUNT">
+      <column name="SLAG_CHANGE_LAYER_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_CHANGE_LAYER_COUNT">
+      <column name="WALL_CHANGE_LAYER_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_CHANGE_TETAILS">
+      <column name="BOTTOM_CHANGE_TETAILS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_CHANGE_BRICKS">
+      <column name="BOTTOM_CHANGE_BRICKS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_COAT_COUNT">
+      <column name="WALL_COAT_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_REPAIR_COUNT">
+      <column name="BOTTOM_REPAIR_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_AMBIENT_TEMP">
+      <column name="WALL_AMBIENT_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_KNOT_THICK">
+      <column name="WALL_PERMANENT_KNOT_THICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_KNOT_START">
+      <column name="WALL_PERMANENT_KNOT_START" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_KNOT_END">
+      <column name="WALL_PERMANENT_KNOT_END" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WALL_CAST_COUNT">
+      <column name="WALL_CAST_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_CAST_NUM">
+      <column name="WALL_CAST_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WALL_CAST_WATER">
+      <column name="WALL_CAST_WATER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_RAP_TIME">
+      <column name="WALL_RAP_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WALL_DEMOULD_TIME">
+      <column name="WALL_DEMOULD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_REHEAT_START">
+      <column name="WALL_PERMANENT_REHEAT_START" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WALL_PERMANENT_REHEAT_END">
+      <column name="WALL_PERMANENT_REHEAT_END" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WALL_WALL_PERM_QULITY">
+      <column name="WALL_WALL_PERM_QULITY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WALL_BOTTOM_PERM_CRACK">
+      <column name="WALL_BOTTOM_PERM_CRACK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_AMBIENT_TEMP">
+      <column name="BOTTOM_AMBIENT_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_KNOT_THICK">
+      <column name="BOTTOM_PERMANENT_KNOT_THICK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_KNOT_START">
+      <column name="BOTTOM_PERMANENT_KNOT_START" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_KNOT_END">
+      <column name="BOTTOM_PERMANENT_KNOT_END" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOTTOM_CAST_COUNT">
+      <column name="BOTTOM_CAST_COUNT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_CAST_NUM">
+      <column name="BOTTOM_CAST_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="BOTTOM_CAST_WATER">
+      <column name="BOTTOM_CAST_WATER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_DEMOULD_TIME">
+      <column name="BOTTOM_DEMOULD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_REHEAT_START">
+      <column name="BOTTOM_PERMANENT_REHEAT_START" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOTTOM_PERMANENT_REHEAT_END">
+      <column name="BOTTOM_PERMANENT_REHEAT_END" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="BOTTOM_WALL_PERM_QULITY">
+      <column name="BOTTOM_WALL_PERM_QULITY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BOTTOM_BOTTOM_PERM_CRACK">
+      <column name="BOTTOM_BOTTOM_PERM_CRACK" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ASSEMBLE_TIME">
+      <column name="ASSEMBLE_TIME" sql-type="DATE" not-null="true" />
+    </property>
+    <property name="ASSEMBLE_REMARK">
+      <column name="ASSEMBLE_REMARK" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="USER_ID">
+      <column name="USER_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="TEAM_ID">
+      <column name="TEAM_ID" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

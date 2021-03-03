@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="STEEL_STOCK" table="STEEL_STOCK" lazy="true" schema="WH" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="STEEL_NUM">
+      <column name="STEEL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSITION_ID">
+      <column name="POSITION_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LAYER">
+      <column name="LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STOCK_STATE">
+      <column name="STOCK_STATE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_X">
+      <column name="CENTRE_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Y">
+      <column name="CENTRE_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Z">
+      <column name="CENTRE_Z" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LAYER_SORT_NO">
+      <column name="LAYER_SORT_NO" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ROTATE">
+      <column name="ROTATE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_CHECK_RIGHT">
+      <column name="IS_CHECK_RIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OUTSOURCING_STEEL_NUM">
+      <column name="OUTSOURCING_STEEL_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STORAGE_TIME">
+      <column name="STORAGE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="RECORD_TIME">
+      <column name="RECORD_TIME" sql-type="DATE" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

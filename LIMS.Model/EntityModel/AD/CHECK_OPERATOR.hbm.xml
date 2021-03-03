@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CHECK_OPERATOR" table="CHECK_OPERATOR" lazy="true" schema="AD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_CHECK_OPERATOR_ID</param>
+      </generator>
+    </id>
+    <property name="BOTTOM_ID_GATHER">
+      <column name="BOTTOM_ID_GATHER" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="CLASS_NAME">
+      <column name="CLASS_NAME" sql-type="NVARCHAR2" not-null="true" />
+    </property>
+    <property name="CHI_NAME">
+      <column name="CHI_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="DB_CONNECT_NAME">
+      <column name="DB_CONNECT_NAME" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ANNOTATION">
+      <column name="ANNOTATION" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

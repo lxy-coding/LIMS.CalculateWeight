@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SLAB_GENER_VIEW_INTERFACE" table="SLAB_GENER_VIEW_INTERFACE" lazy="true" schema="SO" >
+    <id name="ID2" column="ID2">
+      <generator class="sequence">
+        <param name="sequence">S_SLAB_GENER_VIEW_INTERFACE_ID</param>
+      </generator>
+    </id>
+    <property name="ROLLER_NUM">
+      <column name="ROLLER_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="SLAB_NUM">
+      <column name="SLAB_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="R_FLAG">
+      <column name="R_FLAG" sql-type="NUMBER" not-null="true" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

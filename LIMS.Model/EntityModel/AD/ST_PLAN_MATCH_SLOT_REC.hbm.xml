@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_PLAN_MATCH_SLOT_REC" table="ST_PLAN_MATCH_SLOT_REC" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_1_NUM">
+      <column name="SLOT_1_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_2_NUM">
+      <column name="SLOT_2_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SLOT_3_NUM">
+      <column name="SLOT_3_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SLOT_NUM">
+      <column name="SLOT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MATCH_TIME">
+      <column name="MATCH_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="USER_NUM">
+      <column name="USER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FLAG">
+      <column name="FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

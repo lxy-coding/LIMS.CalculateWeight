@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CLASS_SEQUENCE_MAP" table="CLASS_SEQUENCE_MAP" lazy="true" schema="AD" >
+    <id name="TOP_ID" column="TOP_ID">
+      <generator class="sequence">
+        <param name="sequence">S_CLASS_SEQUENCE_MAP_ID</param>
+      </generator>
+    </id>
+    <property name="CLASS_TYPE">
+      <column name="CLASS_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CHECK_LITTLE_SN">
+      <column name="CHECK_LITTLE_SN" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="ANNOTATION">
+      <column name="ANNOTATION" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="NVARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

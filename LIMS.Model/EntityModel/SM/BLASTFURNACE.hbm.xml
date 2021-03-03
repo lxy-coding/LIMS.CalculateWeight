@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BLASTFURNACE" table="BLASTFURNACE" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="IRONTIMESNUM">
+      <column name="IRONTIMESNUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IRONCONNUM">
+      <column name="IRONCONNUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="IRONTEMP">
+      <column name="IRONTEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IRONWEIGHT">
+      <column name="IRONWEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IRONCOMPOSITION">
+      <column name="IRONCOMPOSITION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WEIGHINGTIME">
+      <column name="WEIGHINGTIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="RECORDINGTIME">
+      <column name="RECORDINGTIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STATE">
+      <column name="STATE" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

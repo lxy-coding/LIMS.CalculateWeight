@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ST_TRANS_ORDER_REC" table="ST_TRANS_ORDER_REC" lazy="true" schema="AD" >
+    <id name="GUID" column="GUID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FATHER_PLAN_NUM">
+      <column name="FATHER_PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TRANS_CLASS">
+      <column name="TRANS_CLASS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TRANS_SUB_CLASS">
+      <column name="TRANS_SUB_CLASS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ORDER_NUM">
+      <column name="ORDER_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PRIORITY_LEVEL">
+      <column name="PRIORITY_LEVEL" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TEMP_PLAN_FLAG">
+      <column name="TEMP_PLAN_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TRANS_ID">
+      <column name="TRANS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="REAL_TRANS_ID">
+      <column name="REAL_TRANS_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HOIST_ID">
+      <column name="HOIST_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_SPA_ID">
+      <column name="START_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="END_SPA_ID">
+      <column name="END_SPA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="WORK_TYPE">
+      <column name="WORK_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_SEQ">
+      <column name="EXECUTE_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="RECOMMEND_SEQ">
+      <column name="RECOMMEND_SEQ" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="START_WST_ID">
+      <column name="START_WST_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="END_WST_ID">
+      <column name="END_WST_ID" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="MOVE_START_TIME">
+      <column name="MOVE_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="MOVE_END_TIME">
+      <column name="MOVE_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="OCCUPY_START_TIME">
+      <column name="OCCUPY_START_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="OCCUPY_END_TIME">
+      <column name="OCCUPY_END_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="END_TASK_TIME">
+      <column name="END_TASK_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="SET_TIME">
+      <column name="SET_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="REMIND_TIME">
+      <column name="REMIND_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="R_FLAG">
+      <column name="R_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="STATUS">
+      <column name="STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="GENER_TIME">
+      <column name="GENER_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="GRADE">
+      <column name="GRADE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SELECT_STATUS">
+      <column name="SELECT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="EXECUTE_STATUS">
+      <column name="EXECUTE_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FAIL_REASON">
+      <column name="FAIL_REASON" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_LAST_ORDER">
+      <column name="IS_LAST_ORDER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

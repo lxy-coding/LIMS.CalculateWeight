@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="POSITION" table="POSITION" lazy="true" schema="WH" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_POSITION_ID</param>
+      </generator>
+    </id>
+    <property name="AREA_ID">
+      <column name="AREA_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_NUM">
+      <column name="POSITION_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSITION_NAME">
+      <column name="POSITION_NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="POSITION_LENGTH">
+      <column name="POSITION_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_WIDTH">
+      <column name="POSITION_WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="POSITION_LIMIT_HEIGHT">
+      <column name="POSITION_LIMIT_HEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_X">
+      <column name="CENTRE_X" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CENTRE_Y">
+      <column name="CENTRE_Y" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_ENABLE">
+      <column name="IS_ENABLE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IS_DISPLAY">
+      <column name="IS_DISPLAY" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ORDER_ROW">
+      <column name="ORDER_ROW" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ORDER_COLUMN">
+      <column name="ORDER_COLUMN" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ORDER_LAYER">
+      <column name="ORDER_LAYER" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="INNER_LENGTH">
+      <column name="INNER_LENGTH" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="INNER_WIDTH">
+      <column name="INNER_WIDTH" sql-type="NUMBER" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

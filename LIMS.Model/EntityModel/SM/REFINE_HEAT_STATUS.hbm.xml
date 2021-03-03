@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="REFINE_HEAT_STATUS" table="REFINE_HEAT_STATUS" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_REFINE_HEAT_STATUS_ID</param>
+      </generator>
+    </id>
+    <property name="REF_ID">
+      <column name="REF_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_ROUTE">
+      <column name="HEAT_ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="STEEL_GRADE">
+      <column name="STEEL_GRADE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="HEAT_STATUS">
+      <column name="HEAT_STATUS" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="LADLE_NUM">
+      <column name="LADLE_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SMELT_POSIT">
+      <column name="SMELT_POSIT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="BEFORE_SMELT_TEMP">
+      <column name="BEFORE_SMELT_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="AFTER_SMELT_TEMP">
+      <column name="AFTER_SMELT_TEMP" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="TIME_STAMP">
+      <column name="TIME_STAMP" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="FIELD1">
+      <column name="FIELD1" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD2">
+      <column name="FIELD2" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD3">
+      <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

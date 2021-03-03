@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="METAL_TYPE" table="METAL_TYPE" lazy="true" schema="SCM" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_METAL_TYPE_ID</param>
+      </generator>
+    </id>
+    <property name="NAME">
+      <column name="NAME" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CODE">
+      <column name="CODE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DESCRIPTION">
+      <column name="DESCRIPTION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="P_ID">
+      <column name="P_ID" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="SPECIFICATION">
+      <column name="SPECIFICATION" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

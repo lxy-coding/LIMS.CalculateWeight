@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="LADLE_DISCERN" table="LADLE_DISCERN" lazy="true" schema="LD" >
+    <id name="ID" column="ID">
+      <generator class="sequence">
+        <param name="sequence">S_LADLE_DISCERN_ID</param>
+      </generator>
+    </id>
+    <property name="CRAMERA_NUM">
+      <column name="CRAMERA_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="WST_NUM">
+      <column name="WST_NUM" sql-type="VARCHAR2" not-null="true" />
+    </property>
+    <property name="TRACKING_NUM">
+      <column name="TRACKING_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="DISCERN_NUM">
+      <column name="DISCERN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CONFIRM_NUM">
+      <column name="CONFIRM_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TRACKING_FLAG">
+      <column name="TRACKING_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DISCERN_FLAG">
+      <column name="DISCERN_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CONFIRM_FLAG">
+      <column name="CONFIRM_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="DH_FLAG">
+      <column name="DH_FLAG" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="IMAGE_ADDRESS">
+      <column name="IMAGE_ADDRESS" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD4">
+      <column name="FIELD4" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD5">
+      <column name="FIELD5" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="FIELD6">
+      <column name="FIELD6" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>
