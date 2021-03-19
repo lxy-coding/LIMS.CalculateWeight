@@ -99,8 +99,8 @@
     <property name="FIELD3">
       <column name="FIELD3" sql-type="VARCHAR2" not-null="false" />
     </property>
-    <property name="CRA_DEAL_SYMBOL">
+    <!--<property name="CRA_DEAL_SYMBOL">
       <column name="CRA_DEAL_SYMBOL" sql-type="NUMBER" not-null="true" />
-    </property>
+    </property>-->
   </class>
 </hibernate-mapping>

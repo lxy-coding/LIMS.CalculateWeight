@@ -76,7 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataTool.cs" />
+    <Compile Include="CalculateWeightService.cs" />
     <Compile Include="DTO\AM\ResourceInfoDto.cs" />
     <Compile Include="DTO\AM\UserDto.cs" />
     <Compile Include="DTO\AM\UserInfoDto.cs" />
@@ -103,11 +103,8 @@
     <Compile Include="DTO\WH\SABL_CRA_WORK_Model.cs" />
     <Compile Include="DTO\WH\SLAB_ALL_Model.cs" />
     <Compile Include="DTO\WH\V_SPA_PLAN.cs" />
-    <Compile Include="GeneralDataQuery.cs" />
     <Compile Include="NHibernateBaseUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScrapDataTool.cs" />
-    <Compile Include="SlabServiceDataTool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

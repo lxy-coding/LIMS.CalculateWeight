@@ -82,7 +82,7 @@
       <column name="CHARGE_END_TIME" sql-type="DATE" not-null="false" />
     </property>
     <property name="DISPATCH_END_TIME">
-      <column name="DISPATCH_END_TIME" sql-type="DATE" not-null="false" />
+      <column name="DISPATCH_END_TIME" sql-type="DATE" not-null="true" />
     </property>
   </class>
 </hibernate-mapping>

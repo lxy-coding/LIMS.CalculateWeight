@@ -69,14 +69,5 @@
     <property name="THERMAL_STATUS">
       <column name="THERMAL_STATUS" sql-type="NUMBER" not-null="false" />
     </property>
-    <property name="COOL_REPAIR_NUM">
-      <column name="COOL_REPAIR_NUM" sql-type="VARCHAR2" not-null="false" />
-    </property>
-    <property name="HOT_REPAIR_NUM">
-      <column name="HOT_REPAIR_NUM" sql-type="VARCHAR2" not-null="false" />
-    </property>
-    <property name="LADLE_TYPE">
-      <column name="LADLE_TYPE" sql-type="NUMBER" not-null="false" />
-    </property>
   </class>
 </hibernate-mapping>

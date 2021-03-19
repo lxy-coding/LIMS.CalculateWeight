@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="LIMS.Model" namespace="LIMS.Model.EntityModel" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="CON_POS_RECORD" table="CON_POS_RECORD" lazy="true" schema="SM" >
+    <id name="ID" column="ID">
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="X_COORD">
+      <column name="X_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="Y_COORD">
+      <column name="Y_COORD" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="HEAT_NUM">
+      <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="PLAN_NUM">
+      <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="WST_NUM">
+      <column name="WST_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="OBJ_NUM">
+      <column name="OBJ_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="TARE_WGT">
+      <column name="TARE_WGT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ROUTE">
+      <column name="ROUTE" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="UPDATE_TIME">
+      <column name="UPDATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="CREATE_TIME">
+      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+    </property>
+    <property name="WEIGHT">
+      <column name="WEIGHT" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="CON_TYPE">
+      <column name="CON_TYPE" sql-type="NUMBER" not-null="false" />
+    </property>
+    <property name="ROUTE_DETAIL">
+      <column name="ROUTE_DETAIL" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="SPA_NUM">
+      <column name="SPA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CRA_NUM">
+      <column name="CRA_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+    <property name="CON_NUM">
+      <column name="CON_NUM" sql-type="VARCHAR2" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

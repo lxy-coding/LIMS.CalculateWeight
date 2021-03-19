@@ -36,11 +36,5 @@
     <property name="PLAN_NUM">
       <column name="PLAN_NUM" sql-type="VARCHAR2" not-null="false" />
     </property>
-    <property name="CHARGE_STATUS">
-      <column name="CHARGE_STATUS" sql-type="NUMBER" not-null="false" />
-    </property>
-    <property name="BOF_TAP_TIME">
-      <column name="BOF_TAP_TIME" sql-type="DATE" not-null="false" />
-    </property>
   </class>
 </hibernate-mapping>

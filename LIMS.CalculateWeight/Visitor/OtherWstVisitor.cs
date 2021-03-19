@@ -1,0 +1,57 @@
+﻿using LIMS.CalculateWeight.ActionHandler;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LIMS.CalculateWeight.Visitor
+{
+    public class OtherWstVisitor:VisitorBase
+    {
+        /// <summary>
+        /// 空包放吊
+        /// </summary>
+        /// <param name="record"></param>
+        public override void EmptyDrop(ActionHandlerBase handler)
+        {
+
+        }
+
+        /// <summary>
+        /// 空包起吊
+        /// </summary>
+        /// <param name="record"></param>
+        public override void EmptyHoist(ActionHandlerBase handler)
+        {
+
+        }
+
+        /// <summary>
+        /// 重包放吊
+        /// </summary>
+        /// <param name="record"></param>
+        public override void FullDrop(ActionHandlerBase handler)
+        {
+            PosManager.UpdatePos(handler.Record.CRA_ID.CRA_NUM, Wst.NUM, handler.Record.CRA_ID.CRA_NUM);
+        }
+
+        /// <summary>
+        /// 重包起吊
+        /// </summary>
+        /// <param name="record"></param>
+        public override void FullHoist(ActionHandlerBase handler)
+        {
+            PosManager.UpdatePos(Wst.NUM, handler.Record.CRA_ID.CRA_NUM, handler.Record.CRA_ID.CRA_NUM);
+        }
+
+        /// <summary>
+        /// 兑物
+        /// </summary>
+        /// <param name="record"></param>
+        public override void Pour(ActionHandlerBase handler)
+        {
+
+        }
+    }
+}

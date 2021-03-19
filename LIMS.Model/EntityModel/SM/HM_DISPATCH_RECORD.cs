@@ -10,11 +10,6 @@ namespace LIMS.Model.EntityModel
 
     public class HM_DISPATCH_RECORD
     {
-        public HM_DISPATCH_RECORD()
-        {
-            FIELD3 = "0";
-        }
-
         /// <summary>
         /// 序号，主键; GUID
         /// <summary>
@@ -60,7 +55,7 @@ namespace LIMS.Model.EntityModel
         /// <summary>
         public virtual int TEAM_ID { get; set; }
         /// <summary>
-        /// 是否手动完成分流，0:否，1:是
+        /// 预留字段1;
         /// <summary>
         public virtual string FIELD1 { get; set; }
         /// <summary>
@@ -123,6 +118,6 @@ namespace LIMS.Model.EntityModel
         /// <summary>
         /// 分流结束时间
         /// <summary>
-        public virtual DateTime? DISPATCH_END_TIME { get; set; }
+        public virtual DateTime DISPATCH_END_TIME { get; set; }
     }
 }

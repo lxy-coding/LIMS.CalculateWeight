@@ -1,0 +1,3 @@
+Net Stop LIMS_CalculateWeightService
+sc delete LIMS_CalculateWeightService
+pause

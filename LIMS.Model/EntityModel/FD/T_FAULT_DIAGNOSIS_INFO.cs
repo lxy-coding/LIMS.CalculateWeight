@@ -15,7 +15,7 @@ namespace LIMS.Model.EntityModel
         public virtual DateTime? FAULT_START_TIME { get; set; }
         public virtual DateTime? FAULT_END_TIME { get; set; }
         public virtual short? FAULT_FLAG { get; set; }
-        public virtual DateTime? CREATE_TIME { get; set; }
+        public virtual string CREATE_TIME { get; set; }
         public virtual string PROCESS_NAME { get; set; }
         public virtual DateTime? PROCESS_TIME { get; set; }
     }

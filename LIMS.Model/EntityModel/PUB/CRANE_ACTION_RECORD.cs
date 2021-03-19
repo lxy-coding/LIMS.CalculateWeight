@@ -140,6 +140,6 @@ namespace LIMS.Model.EntityModel {
         /// <summary>
         /// 天车处理标志位; 1为未处理，2为已处理
         /// <summary>
-        public virtual short CRA_DEAL_SYMBOL { get; set; }
+        //public virtual short CRA_DEAL_SYMBOL { get; set; }
     }
 }

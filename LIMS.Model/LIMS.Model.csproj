@@ -31,31 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.ActiveRecord">
-      <HintPath>..\LIMS.SYS.Web\packages\Castle.Activerecord.3.0.0.1\lib\Net40\Castle.ActiveRecord.dll</HintPath>
-    </Reference>
-    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
-      <HintPath>..\LIMS.SYS.Client.ProductionAnimation\LIMS.SYS.Client.ProductionAnimation\packages\ControlzEx.4.3.1\lib\net45\ControlzEx.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\LIMS.SYS.Client\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MahApps.Metro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51482d6f650b2b3f, processorArchitecture=MSIL">
-      <HintPath>..\LIMS.SYS.Client.ProductionAnimation\LIMS.SYS.Client.ProductionAnimation\packages\MahApps.Metro.2.1.1\lib\net452\MahApps.Metro.dll</HintPath>
+    <Reference Include="NHibernate, Version=4.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.1.1.4000\lib\net40\NHibernate.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Prism">
-      <HintPath>..\DLL\Microsoft.Practices.Prism.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\LIMS.SYS.Client.ProductionAnimation\LIMS.SYS.Client.ProductionAnimation\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -69,20 +51,16 @@
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomModel\CheckRecord.cs" />
     <Compile Include="CustomModel\CraneActionRecord.cs" />
-    <Compile Include="CustomModel\CraneHangRecord.cs" />
     <Compile Include="CustomModel\Scrap_Hang_Log.cs" />
     <Compile Include="CustomModel\T_SLAB_POSIT.cs" />
     <Compile Include="CustomModel\T_WHS_CHECK_RECORD.cs" />
-    <Compile Include="EntityModel\AM\Node.cs" />
     <Compile Include="EntityModel\AM\REL_ROLE_RESOURCE.cs" />
     <Compile Include="EntityModel\AM\REL_USER_ROLE.cs" />
     <Compile Include="EntityModel\AM\SHIFT_INFO.cs" />
@@ -105,37 +83,10 @@
     <Compile Include="EntityModel\DC\REAL_DATA_CONFIG.cs" />
     <Compile Include="EntityModel\DC\REAL_DATA_DEVICE.cs" />
     <Compile Include="EntityModel\FD\T_FAULT_DIAGNOSIS_INFO.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM01.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM07.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM08.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM10.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM16.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM17.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM18.cs" />
-    <Compile Include="EntityModel\SI_DATA\A6AM19.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA620.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA621.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA624.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA625.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA626.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA627.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA629.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA630.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA619.cs" />
-    <Compile Include="EntityModel\SI_DATA\BILLET_IN_COOLING_BED.cs" />
-    <Compile Include="EntityModel\SI_DATA\CCM_ROTATION_INTERFACE.cs" />
-    <Compile Include="EntityModel\SI_DATA\CRANE_IRON_INFO.cs" />
-    <Compile Include="EntityModel\SI_DATA\CRANE_SCRAP_INFO.cs" />
-    <Compile Include="EntityModel\SI_DATA\CRANE_TRACK_INFO.cs" />
-    <Compile Include="EntityModel\SI_DATA\EXCHANGE_BUFFER_L2_TCWL.cs" />
-    <Compile Include="EntityModel\SI_DATA\EXCHANGE_BUFFER_L2_TCWL2.cs" />
-    <Compile Include="EntityModel\SI_DATA\INTERFACE_INFO.cs" />
-    <Compile Include="EntityModel\SI_DATA\LIMSI_RAPIDANALYS_MAIN.cs" />
-    <Compile Include="EntityModel\SI_DATA\LIMSI_RAPIDANALYS_SUB.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA606.cs" />
-    <Compile Include="EntityModel\SI_DATA\AMA607.cs" />
+    <Compile Include="EntityModel\PUB\CRANE_ACTION_RECORD_X.cs" />
+    <Compile Include="EntityModel\PUB\CRANE_REAL_INFO_X.cs" />
+    <Compile Include="EntityModel\SM\CON_POS_RECORD.cs" />
     <Compile Include="EntityModel\SM\HML_OUTPUT_RECORD.cs" />
-    <Compile Include="EntityModel\SM\HML_WITHDRAW_RECORD.cs" />
     <Compile Include="EntityModel\SM\HM_DISPATCH_RECORD.cs" />
     <Compile Include="EntityModel\SM\HM_HANG_INFO.cs" />
     <Compile Include="EntityModel\SM\HM_INPUT_RECORD.cs" />
@@ -197,6 +148,31 @@
     <Compile Include="EntityModel\SCM\SCRAP_POOL.cs" />
     <Compile Include="EntityModel\SCM\SCRAP_STOCK.cs" />
     <Compile Include="EntityModel\SCM\SCRAP_TYPE.cs" />
+    <Compile Include="EntityModel\SI\A6AM01.cs" />
+    <Compile Include="EntityModel\SI\A6AM07.cs" />
+    <Compile Include="EntityModel\SI\A6AM08.cs" />
+    <Compile Include="EntityModel\SI\A6AM10.cs" />
+    <Compile Include="EntityModel\SI\A6AM16.cs" />
+    <Compile Include="EntityModel\SI\A6AM17.cs" />
+    <Compile Include="EntityModel\SI\A6AM18.cs" />
+    <Compile Include="EntityModel\SI\A6AM19.cs" />
+    <Compile Include="EntityModel\SI\AMA606.cs" />
+    <Compile Include="EntityModel\SI\AMA607.cs" />
+    <Compile Include="EntityModel\SI\AMA619.cs" />
+    <Compile Include="EntityModel\SI\AMA620.cs" />
+    <Compile Include="EntityModel\SI\AMA621.cs" />
+    <Compile Include="EntityModel\SI\AMA624.cs" />
+    <Compile Include="EntityModel\SI\AMA625.cs" />
+    <Compile Include="EntityModel\SI\AMA626.cs" />
+    <Compile Include="EntityModel\SI\AMA627.cs" />
+    <Compile Include="EntityModel\SI\AMA629.cs" />
+    <Compile Include="EntityModel\SI\CRANE_IRON_INFO.cs" />
+    <Compile Include="EntityModel\SI\CRANE_SCRAP_INFO.cs" />
+    <Compile Include="EntityModel\SI\CRANE_TRACK_INFO.cs" />
+    <Compile Include="EntityModel\SI\EXCHANGE_BUFFER_L2_TCWL.cs" />
+    <Compile Include="EntityModel\SI\INTERFACE_INFO.cs" />
+    <Compile Include="EntityModel\SI\LIMSI_RAPIDANALYS_MAIN.cs" />
+    <Compile Include="EntityModel\SI\LIMSI_RAPIDANALYS_SUB.cs" />
     <Compile Include="EntityModel\SL\LOG.cs" />
     <Compile Include="EntityModel\SM\BAKE_CRAFT.cs" />
     <Compile Include="EntityModel\SM\BLASTFURNACE.cs" />
@@ -221,28 +197,12 @@
     <Compile Include="EntityModel\SM\HML_REAL_INFO.cs" />
     <Compile Include="EntityModel\SM\HM_MANUAL_TEMP_RECORD.cs" />
     <Compile Include="EntityModel\SM\HOTMETALINANDOUT.cs" />
-    <Compile Include="EntityModel\SM\LADLE_AR_RECORD.cs" />
-    <Compile Include="EntityModel\SM\LADLE_ASSEMBLE_RECORD.cs" />
     <Compile Include="EntityModel\SM\LADLE_COLD_REPAIR.cs" />
-    <Compile Include="EntityModel\SM\LADLE_COMPONENTS.cs" />
-    <Compile Include="EntityModel\SM\LADLE_COVER_PROPERTY.cs" />
-    <Compile Include="EntityModel\SM\LADLE_DISASSEMBLE_RECORD.cs" />
-    <Compile Include="EntityModel\SM\LADLE_DRAINAGE_RECORD.cs" />
-    <Compile Include="EntityModel\SM\LADLE_ENTERPRISE.cs" />
-    <Compile Include="EntityModel\SM\LADLE_HOTREPAIR_RECORD.cs" />
     <Compile Include="EntityModel\SM\LADLE_HOT_REPAIR.cs" />
-    <Compile Include="EntityModel\SM\LADLE_MATERIALS.cs" />
-    <Compile Include="EntityModel\SM\LADLE_ONOFF_RECORD.cs" />
-    <Compile Include="EntityModel\SM\LADLE_READY_RECORD.cs" />
     <Compile Include="EntityModel\SM\LADLE_REAL_INFO.cs" />
-    <Compile Include="EntityModel\SM\LADLE_REHEAT_REAL.cs" />
-    <Compile Include="EntityModel\SM\LADLE_REHEAT_RECORD.cs" />
-    <Compile Include="EntityModel\SM\LADLE_TURNOVER_RECORD.cs" />
     <Compile Include="EntityModel\SM\REFINE_HEAT_RECORD.cs" />
     <Compile Include="EntityModel\SM\REFINE_HEAT_STATUS.cs" />
     <Compile Include="EntityModel\SM\REFINE_PROPERTY.cs" />
-    <Compile Include="EntityModel\SM\SLAG_LADLE_PROPERTY.cs" />
-    <Compile Include="EntityModel\SM\SLAG_LADLE_WORK_RECORD.cs" />
     <Compile Include="EntityModel\SM\SLOT_ADD.cs" />
     <Compile Include="EntityModel\SM\SLOT_CROSS_SPA.cs" />
     <Compile Include="EntityModel\SM\SLOT_HANG_INFO.cs" />
@@ -255,6 +215,7 @@
     <Compile Include="EntityModel\SM\STEEL_GRADE_INFO.cs" />
     <Compile Include="EntityModel\SM\TEMP_CON.cs" />
     <Compile Include="EntityModel\SM\TILTER_PROPERTY.cs" />
+    <Compile Include="EntityModel\SM\CON_POS_INFO.cs" />
     <Compile Include="EntityModel\SM\TILTER_SIGNAL.cs" />
     <Compile Include="EntityModel\SM\TILTER_SIGNAL_RECORD.cs" />
     <Compile Include="EntityModel\SM\WST_WEIGHT_RECORD.cs" />
@@ -343,7 +304,7 @@
     <EmbeddedResource Include="EntityModel\SO\SLAB_VIEW_INTERFACE.hbm.xml" />
     <EmbeddedResource Include="EntityModel\PN\VEHICLE_DISCRIMINATE_RECORD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SL\LOG.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\INTERFACE_INFO.hbm.xml" />
+    <EmbeddedResource Include="EntityModel\SI\INTERFACE_INFO.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\BAKE_CRAFT.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\BOF_HEAT_RECORD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\BOF_HEAT_STATUS.hbm.xml" />
@@ -454,7 +415,7 @@
     <EmbeddedResource Include="EntityModel\TF\LADLE_STAGE_TEMP_DROP.hbm.xml" />
     <EmbeddedResource Include="EntityModel\TF\LADLE_SUB_STAGE.hbm.xml" />
     <EmbeddedResource Include="EntityModel\AM\V_SELECTAUTHORITY.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM19.hbm.xml" />
+    <EmbeddedResource Include="EntityModel\SI\A6AM19.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SCM\MAIN_SCRAP.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\SLOT_ADD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\SLOT_CROSS_SPA.hbm.xml" />
@@ -467,55 +428,42 @@
     <EmbeddedResource Include="EntityModel\SM\HML_OUTPUT_RECORD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\HM_DISPATCH_RECORD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\HM_INPUT_RECORD.hbm.xml" />
-    <Content Include="EntityModel\SI_DATA\A6AM01.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM07.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM08.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM10.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM16.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM17.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\A6AM18.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA606.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA607.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA619.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA620.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA621.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA624.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA625.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA626.hbm.xml" />
-    <Content Include="EntityModel\SI_DATA\AMA627.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA629.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\BILLET_IN_COOLING_BED.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\AMA630.hbm.xml">
+    <EmbeddedResource Include="EntityModel\PUB\CRANE_REAL_INFO_X.hbm.xml" />
+    <EmbeddedResource Include="EntityModel\PUB\CRANE_ACTION_RECORD_X.hbm.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="EntityModel\SI_DATA\CRANE_IRON_INFO.hbm.xml" />
-    <Content Include="EntityModel\SI_DATA\CRANE_SCRAP_INFO.hbm.xml" />
-    <Content Include="EntityModel\SI_DATA\CRANE_TRACK_INFO.hbm.xml" />
-    <Content Include="EntityModel\SI_DATA\EXCHANGE_BUFFER_L2_TCWL.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\LIMSI_RAPIDANALYS_MAIN.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SI_DATA\LIMSI_RAPIDANALYS_SUB.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM01.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM07.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM08.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM10.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM16.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM17.hbm.xml" />
+    <Content Include="EntityModel\SI\A6AM18.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA606.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA607.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA619.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA620.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA621.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA624.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA625.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA626.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA627.hbm.xml" />
+    <Content Include="EntityModel\SI\AMA629.hbm.xml" />
+    <Content Include="EntityModel\SI\CRANE_IRON_INFO.hbm.xml" />
+    <Content Include="EntityModel\SI\CRANE_SCRAP_INFO.hbm.xml" />
+    <Content Include="EntityModel\SI\CRANE_TRACK_INFO.hbm.xml" />
+    <Content Include="EntityModel\SI\EXCHANGE_BUFFER_L2_TCWL.hbm.xml" />
+    <Content Include="EntityModel\SI\LIMSI_RAPIDANALYS_MAIN.hbm.xml" />
+    <Content Include="EntityModel\SI\LIMSI_RAPIDANALYS_SUB.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\CRANE_PLAN_INFO.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\HM_MANUAL_TEMP_RECORD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\HM_HANG_INFO.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\HML_WITHDRAW_RECORD.hbm.xml" />
+    <EmbeddedResource Include="EntityModel\SM\CON_POS_RECORD.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="EntityModel\SM\HM_MANUAL_TEMP_RECORD.hbm.xml" />
     <EmbeddedResource Include="EntityModel\SM\WST_WEIGHT_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_AR_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_ASSEMBLE_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_COMPONENTS.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_COVER_PROPERTY.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_DISASSEMBLE_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_DRAINAGE_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_ENTERPRISE.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_MATERIALS.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_ONOFF_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_READY_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_REHEAT_REAL.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_REHEAT_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_TURNOVER_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\SLAG_LADLE_PROPERTY.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\SLAG_LADLE_WORK_RECORD.hbm.xml" />
-    <EmbeddedResource Include="EntityModel\SM\LADLE_HOTREPAIR_RECORD.hbm.xml" />
+    <EmbeddedResource Include="EntityModel\SM\CON_POS_INFO.hbm.xml" />
     <Content Include="EntityModel\TF\POLYNOMIAL_COEFF.hbm.xml" />
     <Content Include="EntityModel\TF\SIMULATION_RESULT.hbm.xml" />
     <EmbeddedResource Include="EntityModel\WH\CHECK_RECORD.hbm.xml" />

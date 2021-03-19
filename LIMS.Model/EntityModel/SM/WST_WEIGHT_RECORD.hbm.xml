@@ -12,38 +12,29 @@
     <property name="DEVICE_TYPE">
       <column name="DEVICE_TYPE" sql-type="NUMBER" not-null="false" />
     </property>
-    <property name="ENTER_CRA">
-      <column name="ENTER_CRA" sql-type="VARCHAR2" not-null="false" />
+    <property name="CRA">
+      <column name="CRA" sql-type="VARCHAR2" not-null="false" />
     </property>
-    <property name="ENTER_WST">
-      <column name="ENTER_WST" sql-type="VARCHAR2" not-null="false" />
+    <property name="WST">
+      <column name="WST" sql-type="VARCHAR2" not-null="false" />
     </property>
-    <property name="ENTER_TIME">
-      <column name="ENTER_TIME" sql-type="DATE" not-null="false" />
+    <property name="START_TIME">
+      <column name="START_TIME" sql-type="DATE" not-null="false" />
     </property>
-    <property name="ENTER_WEIGHT">
-      <column name="ENTER_WEIGHT" sql-type="NUMBER" not-null="false" />
+    <property name="GROSS_WEIGHT">
+      <column name="GROSS_WEIGHT" sql-type="NUMBER" not-null="false" />
     </property>
-    <property name="EXIT_CRA">
-      <column name="EXIT_CRA" sql-type="VARCHAR2" not-null="false" />
+    <property name="END_TIME">
+      <column name="END_TIME" sql-type="DATE" not-null="false" />
     </property>
-    <property name="EXIT_WST">
-      <column name="EXIT_WST" sql-type="VARCHAR2" not-null="false" />
-    </property>
-    <property name="EXTI_TIME">
-      <column name="EXTI_TIME" sql-type="DATE" not-null="false" />
-    </property>
-    <property name="EXTI_WEIGHT">
-      <column name="EXTI_WEIGHT" sql-type="NUMBER" not-null="false" />
+    <property name="TARE_WEIGHT">
+      <column name="TARE_WEIGHT" sql-type="NUMBER" not-null="false" />
     </property>
     <property name="HEAT_NUM">
       <column name="HEAT_NUM" sql-type="VARCHAR2" not-null="false" />
     </property>
     <property name="TYPE">
       <column name="TYPE" sql-type="NUMBER" not-null="false" />
-    </property>
-    <property name="ODD">
-      <column name="ODD" sql-type="VARCHAR2" not-null="false" />
     </property>
     <property name="FLAG">
       <column name="FLAG" sql-type="NUMBER" not-null="false" />
@@ -66,8 +57,8 @@
     <property name="NET_WEIGHT">
       <column name="NET_WEIGHT" sql-type="NUMBER" not-null="false" />
     </property>
-    <property name="IS_MATCH">
-      <column name="IS_MATCH" sql-type="NUMBER" not-null="false" />
+   <property name="IO_TYPE">
+      <column name="IO_TYPE" sql-type="NUMBER" not-null="false" />
     </property>
   </class>
 </hibernate-mapping>

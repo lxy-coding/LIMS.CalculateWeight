@@ -22,7 +22,7 @@
       <column name="FAULT_FLAG" sql-type="NUMBER" not-null="false" />
     </property>
     <property name="CREATE_TIME">
-      <column name="CREATE_TIME" sql-type="DATE" not-null="false" />
+      <column name="CREATE_TIME" sql-type="CHAR" not-null="false" />
     </property>
     <property name="PROCESS_NAME">
       <column name="PROCESS_NAME" sql-type="VARCHAR2" not-null="false" />

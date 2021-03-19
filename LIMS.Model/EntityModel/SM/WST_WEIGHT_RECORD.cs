@@ -16,53 +16,41 @@ namespace LIMS.Model.EntityModel {
         /// <summary>
         public virtual string DEVICE { get; set; }
         /// <summary>
-        /// 设备类型、1转炉，2精炼，3连铸
+        /// 设备类型、1转炉，2精炼，3连铸，4VD炉
         /// <summary>
         public virtual short? DEVICE_TYPE { get; set; }
         /// <summary>
-        /// 入天车
+        /// 天车号
         /// <summary>
-        public virtual string ENTER_CRA { get; set; }
+        public virtual string CRA { get; set; }
         /// <summary>
-        /// 入工位
+        /// 工位
         /// <summary>
-        public virtual string ENTER_WST { get; set; }
+        public virtual string WST { get; set; }
         /// <summary>
-        /// 入时间
+        /// 开始时间
         /// <summary>
-        public virtual DateTime? ENTER_TIME { get; set; }
+        public virtual DateTime? START_TIME { get; set; }
         /// <summary>
-        /// 入物重
+        /// 毛重
         /// <summary>
-        public virtual int? ENTER_WEIGHT { get; set; }
+        public virtual int? GROSS_WEIGHT { get; set; }     
         /// <summary>
-        /// 出天车
+        /// 结束时间
         /// <summary>
-        public virtual string EXIT_CRA { get; set; }
+        public virtual DateTime? END_TIME { get; set; }
         /// <summary>
-        /// 出工位
+        /// 皮重
         /// <summary>
-        public virtual string EXIT_WST { get; set; }
-        /// <summary>
-        /// 出时间
-        /// <summary>
-        public virtual DateTime? EXTI_TIME { get; set; }
-        /// <summary>
-        /// 出物重
-        /// <summary>
-        public virtual int? EXTI_WEIGHT { get; set; }
+        public virtual int? TARE_WEIGHT { get; set; }
         /// <summary>
         /// 炉次号
         /// <summary>
         public virtual string HEAT_NUM { get; set; }
         /// <summary>
-        /// 类型、1废钢，2铁水，3钢水
+        /// 类型、1废钢，2铁水，3半钢水，4钢水
         /// <summary>
-        public virtual short? TYPE { get; set; }
-        /// <summary>
-        /// 单号、废钢计量委托单号，铁水炉次号
-        /// <summary>
-        public virtual string ODD { get; set; }
+        public virtual short? TYPE { get; set; }       
         /// <summary>
         /// 是否处理标志、0未处理，1已处理
         /// <summary>
@@ -92,8 +80,9 @@ namespace LIMS.Model.EntityModel {
         /// <summary>
         public virtual int? NET_WEIGHT { get; set; }
         /// <summary>
-        /// 是否匹配到分流
+        /// 动作类型:1、兑物 2、到站 3、离站
         /// <summary>
-        public virtual short? IS_MATCH { get; set; }
+        public virtual int? IO_TYPE { get; set; }
+
     }
 }

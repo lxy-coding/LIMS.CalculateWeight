@@ -54,6 +54,9 @@
     <property name="WALL_THICKNESS">
       <column name="WALL_THICKNESS" sql-type="NUMBER" not-null="false" />
     </property>
+    <property name="BOTTOM_THICKNESS">
+      <column name="BOTTOM_THICKNESS" sql-type="NUMBER" not-null="false" />
+    </property>
     <property name="PUROUS_THICKNESS">
       <column name="PUROUS_THICKNESS" sql-type="NUMBER" not-null="false" />
     </property>
@@ -89,9 +92,6 @@
     </property>
     <property name="IS_ONLINE">
       <column name="IS_ONLINE" sql-type="NUMBER" not-null="false" />
-    </property>
-    <property name="BOTTOM_THICKNESS">
-      <column name="BOTTOM_THICKNESS" sql-type="NUMBER" not-null="false" />
     </property>
     <property name="TIME_TAMP">
       <column name="TIME_TAMP" sql-type="DATE" not-null="false" />
